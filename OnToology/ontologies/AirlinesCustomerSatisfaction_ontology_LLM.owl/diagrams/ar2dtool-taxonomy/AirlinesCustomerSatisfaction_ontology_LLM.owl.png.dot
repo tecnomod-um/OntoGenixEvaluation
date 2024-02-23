@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":SeatComfort" ":DepartureDelay" ":Departure" ":CustomerFeedback" ":OnlineSupport" ":ArrivalDelay" ":EvaluationItem" ":FoodAndDrink" ":OnlineBooking" ":TypeOfTravel" ":OnlineBoarding" ":GateLocation" ":FlightClass" ":Cleanliness" ":Wifi" ":CustomerGender" ":CustomerType" ":CustomerSatisfaction" ":LegRoomService" ":CheckinService" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":SeatComfort" ":DepartureDelay" ":OnlineSupport" ":Departure" ":CustomerFeedback" ":ArrivalDelay" ":EvaluationItem" ":FoodAndDrink" ":OnlineBooking" ":TypeOfTravel" ":OnlineBoarding" ":GateLocation" ":FlightClass" ":Cleanliness" ":Wifi" ":CustomerGender" ":CustomerType" ":CustomerSatisfaction" ":LegRoomService" ":CheckinService" ; /*classes style*/
 	":ArrivalDelay" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
 	":OnlineBoarding" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
 	":CustomerGender" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];

@@ -35,12 +35,12 @@ node [shape = rectangle, color="orange"]; "https://vocab.um.es#UnitPriceSpecific
 	"https://vocab.um.es#SalesArticle" -> "http://schema.org/Product" [ label = "owl:equivalentClass" ];
 	"https://vocab.um.es#SalesArticle" -> "http://schema.org/Product" [ label = "owl:sameAs" ];
 	"https://vocab.um.es#SalesArticle" -> "http://example.org/externalResourceAboutSalesArticle" [ label = "rdfs:seeAlso" ];
-	"NULL" -> "https://vocab.um.es#Customer" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "https://vocab.um.es#customer" [ label = "owl:onProperty" ];
 	"NULL" -> "https://vocab.um.es#SalesArticle" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "https://vocab.um.es#hasSalesArticle" [ label = "owl:onProperty" ];
 	"NULL" -> "https://vocab.um.es#Country" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "https://vocab.um.es#country" [ label = "owl:onProperty" ];
+	"NULL" -> "https://vocab.um.es#Customer" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "https://vocab.um.es#customer" [ label = "owl:onProperty" ];
 	"https://vocab.um.es#CustomerID" -> "http://schema.org/identifier" [ label = "owl:equivalentProperty" ];
 	"https://vocab.um.es#CustomerID" -> "http://schema.org/Person" [ label = "owl:sameAs" ];
 	"https://vocab.um.es#SalesArticle" -> "https://vocab.um.es#Product" [ label = "https://vocab.um.es#product" ];

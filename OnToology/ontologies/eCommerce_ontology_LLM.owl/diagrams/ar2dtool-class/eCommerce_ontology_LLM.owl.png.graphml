@@ -813,7 +813,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom33" source="nid_NULL" target="nid_https://vocab.um.es#Customer">
+    <edge id="eid_owl:allValuesFrom33" source="nid_NULL" target="nid_https://vocab.um.es#SalesArticle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -824,7 +824,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty34" source="nid_NULL" target="nid_https://vocab.um.es#customer">
+    <edge id="eid_owl:onProperty34" source="nid_NULL" target="nid_https://vocab.um.es#hasSalesArticle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -835,7 +835,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:allValuesFrom35" source="nid_NULL" target="nid_https://vocab.um.es#SalesArticle">
+    <edge id="eid_owl:allValuesFrom35" source="nid_NULL" target="nid_https://vocab.um.es#Country">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -846,7 +846,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty36" source="nid_NULL" target="nid_https://vocab.um.es#hasSalesArticle">
+    <edge id="eid_owl:onProperty36" source="nid_NULL" target="nid_https://vocab.um.es#country">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -857,7 +857,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:allValuesFrom37" source="nid_NULL" target="nid_https://vocab.um.es#Country">
+    <edge id="eid_owl:allValuesFrom37" source="nid_NULL" target="nid_https://vocab.um.es#Customer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -868,7 +868,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty38" source="nid_NULL" target="nid_https://vocab.um.es#country">
+    <edge id="eid_owl:onProperty38" source="nid_NULL" target="nid_https://vocab.um.es#customer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
