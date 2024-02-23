@@ -1,8 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1000"
-node [shape = rectangle, color="black"]; "base:SubProduct" "base:Product" "base:ProblemSubCategory" "base:ProblemOfComplaint" ; /*classes style*/
-	"base:SubProduct" -> "base:Product" [ label = "rdfs:subClassOf" ];
-	"base:ProblemSubCategory" -> "base:ProblemOfComplaint" [ label = "rdfs:subClassOf" ];
-
-}
