@@ -1,0 +1,550 @@
+@prefix : <http://www.ontology.um.es/brazilianEcommerce/customers#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontology.um.es/brazilianEcommerce/customers#> .
+
+<http://www.ontology.um.es/brazilianEcommerce/customers> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/ThasSalesArticle
+<https://purl.org/ThasSalesArticle> rdf:type owl:ObjectProperty ;
+                                    rdfs:range <https://purl.org/ontologies/MT/SalesArticle> ;
+                                    rdfs:label "has sales article"@en .
+
+
+###  https://vocab.um.es#belongsToOrder
+<https://vocab.um.es#belongsToOrder> rdf:type owl:ObjectProperty ;
+                                     rdfs:range <https://vocab.um.es#Order> ;
+                                     rdfs:label "belongs to order"@en ;
+                                     rdfs:seeAlso "http://purl.obolibrary.org/obo/CDAO_0000190" .
+
+
+###  https://vocab.um.es#hasCity
+<https://vocab.um.es#hasCity> rdf:type owl:ObjectProperty ;
+                              rdfs:range <https://vocab.um.es#City> ;
+                              rdfs:label "has city"@en .
+
+
+###  https://vocab.um.es#hasOrderPayment
+<https://vocab.um.es#hasOrderPayment> rdf:type owl:ObjectProperty ;
+                                      rdfs:range <https://purl.org/ontologies/MT/OrderPayment> ;
+                                      rdfs:label "has order payment"@en .
+
+
+###  https://vocab.um.es#hasProduct
+<https://vocab.um.es#hasProduct> rdf:type owl:ObjectProperty ;
+                                 rdfs:range <https://schema.org/Product> ;
+                                 rdfs:label "has product"@en .
+
+
+###  https://vocab.um.es#hasReview
+<https://vocab.um.es#hasReview> rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                rdfs:label "has review"@en .
+
+
+###  https://vocab.um.es#hasSeller
+<https://vocab.um.es#hasSeller> rdf:type owl:ObjectProperty ;
+                                rdfs:range <https://vocab.um.es#Seller> ;
+                                rdfs:label "has seller"@en .
+
+
+###  https://vocab.um.es#hasState
+<https://vocab.um.es#hasState> rdf:type owl:ObjectProperty ;
+                               rdfs:range <https://vocab.um.es#State> ;
+                               rdfs:label "has state"@en .
+
+
+###  https://vocab.um.es#hasZipCodePrefix
+<https://vocab.um.es#hasZipCodePrefix> rdf:type owl:ObjectProperty ;
+                                       rdfs:range <https://vocab.um.es#ZipCodePrefix> ;
+                                       rdfs:label "has zip code prefix"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.org/category
+<https://schema.org/category> rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:string ;
+                              rdfs:label "category"@en .
+
+
+###  https://schema.org/price
+<https://schema.org/price> rdf:type owl:DatatypeProperty ;
+                           rdfs:range xsd:double ;
+                           rdfs:label "price"@en .
+
+
+###  https://vocab.um.es#hasAnswerDate
+<https://vocab.um.es#hasAnswerDate> rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:dateTime ;
+                                    rdfs:label "has answer date"@en .
+
+
+###  https://vocab.um.es#hasApprovedDate
+<https://vocab.um.es#hasApprovedDate> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:dateTime ;
+                                      rdfs:label "has approved date"@en .
+
+
+###  https://vocab.um.es#hasCommentMessage
+<https://vocab.um.es#hasCommentMessage> rdf:type owl:DatatypeProperty ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:label "has comment message"@en .
+
+
+###  https://vocab.um.es#hasCommentTitle
+<https://vocab.um.es#hasCommentTitle> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:label "has comment title"@en .
+
+
+###  https://vocab.um.es#hasCreationDate
+<https://vocab.um.es#hasCreationDate> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:dateTime ;
+                                      rdfs:label "has creation date"@en .
+
+
+###  https://vocab.um.es#hasCustomerRef
+<https://vocab.um.es#hasCustomerRef> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string .
+
+
+###  https://vocab.um.es#hasDeliveredCarrierDate
+<https://vocab.um.es#hasDeliveredCarrierDate> rdf:type owl:DatatypeProperty ;
+                                              rdfs:range xsd:dateTime ;
+                                              rdfs:label "has delivered carrier date"@en .
+
+
+###  https://vocab.um.es#hasDeliveredCustomerDate
+<https://vocab.um.es#hasDeliveredCustomerDate> rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:dateTime ;
+                                               rdfs:label "has delivered customer date"@en .
+
+
+###  https://vocab.um.es#hasDescriptionLength
+<https://vocab.um.es#hasDescriptionLength> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range xsd:integer ;
+                                           rdfs:label "has description length"@en .
+
+
+###  https://vocab.um.es#hasEstimatedDeliveryDate
+<https://vocab.um.es#hasEstimatedDeliveryDate> rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:dateTime ;
+                                               rdfs:label "has estimated delivery date"@en .
+
+
+###  https://vocab.um.es#hasFreightValue
+<https://vocab.um.es#hasFreightValue> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:double ;
+                                      rdfs:label "has freight value"@en .
+
+
+###  https://vocab.um.es#hasGeolocation
+<https://vocab.um.es#hasGeolocation> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string .
+
+
+###  https://vocab.um.es#hasHeight
+<https://vocab.um.es#hasHeight> rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:double ;
+                                rdfs:label "has height"@en .
+
+
+###  https://vocab.um.es#hasLength
+<https://vocab.um.es#hasLength> rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:double ;
+                                rdfs:label "has length"@en .
+
+
+###  https://vocab.um.es#hasNameLength
+<https://vocab.um.es#hasNameLength> rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:integer ;
+                                    rdfs:label "has name length"@en .
+
+
+###  https://vocab.um.es#hasPaymentInstallments
+<https://vocab.um.es#hasPaymentInstallments> rdf:type owl:DatatypeProperty ;
+                                             rdfs:range xsd:integer ;
+                                             rdfs:label "has payment installments"@en .
+
+
+###  https://vocab.um.es#hasPaymentType
+<https://vocab.um.es#hasPaymentType> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:label "has payment type"@en .
+
+
+###  https://vocab.um.es#hasPaymentValue
+<https://vocab.um.es#hasPaymentValue> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:double ;
+                                      rdfs:label "has payment value"@en .
+
+
+###  https://vocab.um.es#hasPhotosQuantity
+<https://vocab.um.es#hasPhotosQuantity> rdf:type owl:DatatypeProperty ;
+                                        rdfs:range xsd:integer ;
+                                        rdfs:label "has photos quantity"@en .
+
+
+###  https://vocab.um.es#hasPurchaseDate
+<https://vocab.um.es#hasPurchaseDate> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:dateTime ;
+                                      rdfs:label "has purchase date"@en .
+
+
+###  https://vocab.um.es#hasReviewScore
+<https://vocab.um.es#hasReviewScore> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:integer ;
+                                     rdfs:label "has review score"@en .
+
+
+###  https://vocab.um.es#hasStatus
+<https://vocab.um.es#hasStatus> rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:string ;
+                                <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://purl.obolibrary.org/obo/NCIT_C25688" ;
+                                rdfs:label "has status"@en .
+
+
+###  https://vocab.um.es#hasWeight
+<https://vocab.um.es#hasWeight> rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:double ;
+                                rdfs:label "has weight"@en .
+
+
+###  https://vocab.um.es#hasWidth
+<https://vocab.um.es#hasWidth> rdf:type owl:DatatypeProperty ;
+                               rdfs:range xsd:double ;
+                               rdfs:label "has width"@en .
+
+
+###  https://vocab.um.es#orderedBy
+<https://vocab.um.es#orderedBy> rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:string ;
+                                rdfs:label "ordered by"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/ontologies/MT/OrderPayment
+<https://purl.org/ontologies/MT/OrderPayment> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasPaymentInstallments> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange xsd:integer
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasPaymentType> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                              rdf:first "boleto" ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "credit_card" ;
+                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                    rdf:first "debit_card" ;
+                                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                                               rdf:first "not_defined" ;
+                                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                          rdf:first "voucher" ;
+                                                                                                                                          rdf:rest rdf:nil
+                                                                                                                                        ]
+                                                                                                                             ]
+                                                                                                                  ]
+                                                                                                       ]
+                                                                                            ]
+                                                                                ]
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasPaymentValue> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange xsd:double
+                                                              ] ;
+                                              rdfs:label "sales article"@en .
+
+
+###  https://purl.org/ontologies/MT/SalesArticle
+<https://purl.org/ontologies/MT/SalesArticle> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#belongsToOrder> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <https://vocab.um.es#Order>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasProduct> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <https://schema.org/Product>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasSeller> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <https://vocab.um.es#Seller>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://schema.org/price> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange xsd:double
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasEstimatedDeliveryDate> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange xsd:dateTime
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://vocab.um.es#hasFreightValue> ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onDataRange xsd:double
+                                                              ] ;
+                                              rdfs:label "sales article"@en .
+
+
+###  https://schema.org/Product
+<https://schema.org/Product> rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://schema.org/category> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:string
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasDescriptionLength> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasHeight> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:double
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasLength> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:double
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasNameLength> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasPhotosQuantity> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasWeight> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:double
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasWidth> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:double
+                                             ] ;
+                             rdfs:label "product"@en .
+
+
+###  https://vocab.um.es#City
+<https://vocab.um.es#City> rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://vocab.um.es#hasZipCodePrefix> ;
+                                             owl:someValuesFrom <https://vocab.um.es#ZipCodePrefix>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://vocab.um.es#hasState> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass <https://vocab.um.es#State>
+                                           ] ;
+                           rdfs:label "city"@en .
+
+
+###  https://vocab.um.es#Customer
+<https://vocab.um.es#Customer> rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://vocab.um.es#hasZipCodePrefix> ;
+                                                 owl:someValuesFrom <https://vocab.um.es#ZipCodePrefix>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://vocab.um.es#hasCity> ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass <https://vocab.um.es#City>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://vocab.um.es#hasCustomerRef> ;
+                                                 owl:someValuesFrom xsd:string
+                                               ] ;
+                               <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://purl.obolibrary.org/obo/NCIT_C88192" ;
+                               rdfs:label "customer"@en .
+
+
+###  https://vocab.um.es#Order
+<https://vocab.um.es#Order> rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasEstimatedDeliveryDate> ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:dateTime
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasPurchaseDate> ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:dateTime
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasStatus> ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                owl:oneOf [ rdf:type rdf:List ;
+                                                                            rdf:first "approved" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "canceled" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "created" ;
+                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                             rdf:first "delivered" ;
+                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                        rdf:first "invoiced" ;
+                                                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                   rdf:first "processing" ;
+                                                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                              rdf:first "shipped" ;
+                                                                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                         rdf:first "unavailable" ;
+                                                                                                                                                         rdf:rest rdf:nil
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                              ]
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#orderedBy> ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasApprovedDate> ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:dateTime
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasDeliveredCarrierDate> ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:dateTime
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasDeliveredCustomerDate> ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:dateTime
+                                            ] ;
+                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://purl.obolibrary.org/obo/NCIT_C48906" ;
+                            rdfs:label "order"@en .
+
+
+###  https://vocab.um.es#OrderReview
+<https://vocab.um.es#OrderReview> rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#belongsToOrder> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass <https://vocab.um.es#Order>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#hasAnswerDate> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:dateTime
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#hasCommentMessage> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#hasCommentTitle> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#hasCreationDate> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:dateTime
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://vocab.um.es#hasReviewScore> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                      owl:oneOf [ rdf:type rdf:List ;
+                                                                                  rdf:first 1 ;
+                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                             rdf:first 2 ;
+                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                        rdf:first 3 ;
+                                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                                   rdf:first 4 ;
+                                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 5 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                 ]
+                                                                                                      ]
+                                                                                           ]
+                                                                                ]
+                                                                    ]
+                                                  ] ;
+                                  rdfs:label "order review"@en .
+
+
+###  https://vocab.um.es#Seller
+<https://vocab.um.es#Seller> rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasCity> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass <https://vocab.um.es#City>
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://vocab.um.es#hasZipCodePrefix> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass <https://vocab.um.es#ZipCodePrefix>
+                                             ] ;
+                             rdfs:label "seller"@en .
+
+
+###  https://vocab.um.es#State
+<https://vocab.um.es#State> rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://vocab.um.es#hasCity> ;
+                                              owl:someValuesFrom <https://vocab.um.es#City>
+                                            ] ;
+                            rdfs:label "state"@en .
+
+
+###  https://vocab.um.es#ZipCodePrefix
+<https://vocab.um.es#ZipCodePrefix> rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <https://vocab.um.es#hasCity> ;
+                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass <https://vocab.um.es#City>
+                                                    ] ;
+                                    rdfs:label "zip code prefix"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

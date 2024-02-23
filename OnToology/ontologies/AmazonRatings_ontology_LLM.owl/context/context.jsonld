@@ -1,0 +1,64 @@
+{
+  "@context" : {
+    "SalesOrder" : {
+      "@id" : "https://vocab.um.es#SalesOrder"
+    },
+    "SalesArticle" : {
+      "@id" : "https://vocab.um.es#SalesArticle"
+    },
+    "Customer" : {
+      "@id" : "https://vocab.um.es#Customer"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "productId" : {
+      "@id" : "https://vocab.um.es#productId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "timestamp" : {
+      "@id" : "https://vocab.um.es#timestamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Error3" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error3"
+    },
+    "hasProduct" : {
+      "@id" : "https://vocab.um.es#hasProduct",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "userId" : {
+      "@id" : "https://vocab.um.es#userId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Error1" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error1"
+    },
+    "hasCustomer" : {
+      "@id" : "https://vocab.um.es#hasCustomer",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Error2" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error2"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "rating" : {
+      "@id" : "https://vocab.um.es#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}

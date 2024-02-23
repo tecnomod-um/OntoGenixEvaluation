@@ -1,0 +1,77 @@
+{
+  "@context" : {
+    "hasCustomerID" : {
+      "@id" : "https://vocab.um.es#hasCustomerID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCustomerZipCodePrefix" : {
+      "@id" : "https://vocab.um.es#hasCustomerZipCodePrefix",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasZipCodePrefix" : {
+      "@id" : "https://vocab.um.es#hasZipCodePrefix",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Customer" : {
+      "@id" : "https://vocab.um.es#Customer"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf"
+    },
+    "PostalCodeSegment" : {
+      "@id" : "https://vocab.um.es#PostalCodeSegment"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasCustomerRef" : {
+      "@id" : "https://vocab.um.es#hasCustomerRef",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ZipCodePrefix" : {
+      "@id" : "https://vocab.um.es#ZipCodePrefix"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasCity" : {
+      "@id" : "https://vocab.um.es#hasCity",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasCustomerUniqueID" : {
+      "@id" : "https://vocab.um.es#hasCustomerUniqueID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasState" : {
+      "@id" : "https://vocab.um.es#hasState",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "https://vocab.um.es#City"
+    },
+    "State" : {
+      "@id" : "https://vocab.um.es#State"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}

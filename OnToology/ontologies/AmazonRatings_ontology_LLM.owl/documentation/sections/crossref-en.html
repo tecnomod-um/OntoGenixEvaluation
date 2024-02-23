@@ -1,0 +1,302 @@
+<h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">
+            <span>customer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#SalesOrder" title="https://vocab.um.es#SalesOrder">
+            <span>sales order</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#Customer">
+      <h3>customer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Customer</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://org.semanticweb.owlapi/error#Error1"
+               target="_blank"
+               title="http://org.semanticweb.owlapi/error#Error1">error1</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#userId" title="https://vocab.um.es#userId">User Identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#hasCustomer" title="https://vocab.um.es#hasCustomer">has customer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#SalesOrder">
+      <h3>sales order<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#SalesOrder</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://org.semanticweb.owlapi/error#Error2"
+               target="_blank"
+               title="http://org.semanticweb.owlapi/error#Error2">error2</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error3"
+               target="_blank"
+               title="http://org.semanticweb.owlapi/error#Error3">error3</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#rating" title="https://vocab.um.es#rating">Product Rating</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://vocab.um.es#timestamp" title="https://vocab.um.es#timestamp">Timestamp</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://vocab.um.es#hasCustomer" title="https://vocab.um.es#hasCustomer">has customer</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://vocab.um.es#hasProduct" title="https://vocab.um.es#hasProduct">has product</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#hasCustomer" title="https://vocab.um.es#hasCustomer">has customer</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#hasProduct" title="https://vocab.um.es#hasProduct">has product</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#hasCustomer">
+      <h3>has customer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#hasCustomer</p>
+      <div class="comment">
+         <span class="markdown">Associates a sales order with the customer who placed the order.</span>
+      </div>
+      <div class="info">
+         <span class="markdown">This property links a sales order to the respective customer, indicating the ownership of the order.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesOrder" title="https://vocab.um.es#SalesOrder">sales order</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">customer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#hasProduct">
+      <h3>has product<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#hasProduct</p>
+      <div class="comment">
+         <span class="markdown">Associates a sales order with the product being purchased.</span>
+      </div>
+      <div class="info">
+         <span class="markdown">This property links a sales order to the specific product or products that are included in the order. It is used to identify which products are being transacted in each sales order.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesOrder" title="https://vocab.um.es#SalesOrder">sales order</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://vocab.um.es#SalesArticle"
+                  target="_blank"
+                  title="https://vocab.um.es#SalesArticle">sales article</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#productId" title="https://vocab.um.es#productId">Product ID</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#rating" title="https://vocab.um.es#rating">Product Rating</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#timestamp" title="https://vocab.um.es#timestamp">Timestamp</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#userId" title="https://vocab.um.es#userId">User Identifier</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#productId">
+      <h3>Product ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#productId</p>
+      <div class="comment">
+         <span class="markdown">A unique identifier for a product within the sales system.</span>
+      </div>
+      <div class="info">
+         <span class="markdown">This property represents the unique identifier assigned to each product in the catalog. It is used to track products and link them to sales orders.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es/ontology#">https://vocab.um.es/ontology#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://vocab.um.es#SalesArticle"
+                  target="_blank"
+                  title="https://vocab.um.es#SalesArticle">sales article</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#rating">
+      <h3>Product Rating<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#rating</p>
+      <div class="comment">
+         <span class="markdown">An assessment score of a product given by a customer, ranging from 1 (worst) to 5 (best).</span>
+      </div>
+      <div class="info">
+         <span class="markdown">This property represents the rating given to a product within a sales order. It is an integer value that reflects the customer's satisfaction with the product.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es/ontology#">https://vocab.um.es/ontology#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesOrder" title="https://vocab.um.es#SalesOrder">sales order</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#timestamp">
+      <h3>Timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#timestamp</p>
+      <div class="comment">
+         <span class="markdown">The Unix epoch time indicating when the rating was given for a sales order.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesOrder" title="https://vocab.um.es#SalesOrder">sales order</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#userId">
+      <h3>User Identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#userId</p>
+      <div class="comment">
+         <span class="markdown">A unique identifier for a user within the system.</span>
+      </div>
+      <div class="info">
+         <span class="markdown">This property represents the unique identifier assigned to each customer or user of the service. It is used to link customer-specific data such as orders and reviews.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es/ontology#">https://vocab.um.es/ontology#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">customer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

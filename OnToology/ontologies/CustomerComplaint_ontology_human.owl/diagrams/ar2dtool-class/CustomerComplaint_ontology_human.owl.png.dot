@@ -1,0 +1,22 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:State" "base:Resolution" "base:Product" "base:ProblemSubCategory" "base:ProblemOfComplaint" "base:CustomerComplaint" "base:CompanyResponse" "base:Company" ; /*classes style*/
+	"owl:Thing" -> "xsd:integer" [ label = "base:has_customer_zipcode" ];
+	"base:Product" -> "xsd:string" [ label = "base:productName" ];
+	"base:CustomerComplaint" -> "xsd:string" [ label = "base:submitted_by" ];
+	"base:CompanyResponse" -> "base:Resolution" [ label = "base:has_resolution" ];
+	"base:CustomerComplaint" -> "xsd:string" [ label = "base:has_tags" ];
+	"base:CustomerComplaint" -> "xsd:integer" [ label = "base:identifier" ];
+	"base:Resolution" -> "xsd:string" [ label = "base:is_disputed" ];
+	"base:Company" -> "base:CompanyResponse" [ label = "base:performs" ];
+	"base:CompanyResponse" -> "xsd:string" [ label = "base:has_description" ];
+	"base:CustomerComplaint" -> "base:Product" [ label = "base:involves" ];
+	"base:CustomerComplaint" -> "base:ProblemOfComplaint" [ label = "base:relatesToProblem" ];
+	"base:CustomerComplaint" -> "base:State" [ label = "base:has_customer_location" ];
+	"base:CustomerComplaint" -> "xsd:dateTime" [ label = "base:has_date" ];
+	"base:ProblemOfComplaint" -> "base:ProblemSubCategory" [ label = "base:subCategory" ];
+	"base:CustomerComplaint" -> "base:CompanyResponse" [ label = "base:has_company_response" ];
+	"base:CompanyResponse" -> "xsd:string" [ label = "base:has_customer_consense" ];
+
+}

@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#"
+     xml:base="https://vocab.um.es"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender"/>
+        <rdfs:label xml:lang="en">has customer gender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction"/>
+        <rdfs:label xml:lang="en">has customer satisfaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType"/>
+        <rdfs:label xml:lang="en">has customer type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">has evaluation item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass"/>
+        <rdfs:label xml:lang="en">has flight class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel"/>
+        <rdfs:label xml:lang="en">has type of travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has customer age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has flight distance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback">
+        <rdfs:label xml:lang="en">customer feedback</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender">
+        <rdfs:label xml:lang="en">customer gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType">
+        <rdfs:label xml:lang="en">customer type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem">
+        <rdfs:label xml:lang="en">evaluation item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass">
+        <rdfs:label xml:lang="en">flight class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction">
+        <rdfs:label xml:lang="en">customer satisfaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel">
+        <rdfs:label xml:lang="en">type of travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">In minutes</rdfs:comment>
+        <rdfs:label xml:lang="en">arrival delay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">baggage handling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass"/>
+        <rdfs:label xml:lang="en">business</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel"/>
+        <rdfs:label xml:lang="en">business travel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">checkin service</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">cleanliness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">departure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">In minutes</rdfs:comment>
+        <rdfs:label xml:lang="en">departure delay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass"/>
+        <rdfs:label xml:lang="en">eco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender"/>
+        <rdfs:label xml:lang="en">female</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">food and drink</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">gate location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">leg room service</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType"/>
+        <rdfs:label xml:lang="en">loyal customer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender"/>
+        <rdfs:label xml:lang="en">male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">on-board service</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">online boarding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">easy of online booking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">online support</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel"/>
+        <rdfs:label xml:lang="en">personal travel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">seat confort</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem"/>
+        <rdfs:label xml:lang="en">wifi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType"/>
+        <rdfs:label xml:lang="en">disloyal customer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction"/>
+        <rdfs:label xml:lang="en">customer dissatisfied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction"/>
+        <rdfs:label xml:lang="en">customer satisfied</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

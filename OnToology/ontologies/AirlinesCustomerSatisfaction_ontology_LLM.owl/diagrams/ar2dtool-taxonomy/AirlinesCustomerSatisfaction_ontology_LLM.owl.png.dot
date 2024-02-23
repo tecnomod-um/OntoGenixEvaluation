@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":SeatComfort" ":DepartureDelay" ":Departure" ":CustomerFeedback" ":OnlineSupport" ":ArrivalDelay" ":EvaluationItem" ":FoodAndDrink" ":OnlineBooking" ":TypeOfTravel" ":OnlineBoarding" ":GateLocation" ":FlightClass" ":Cleanliness" ":Wifi" ":CustomerGender" ":CustomerType" ":CustomerSatisfaction" ":LegRoomService" ":CheckinService" ; /*classes style*/
+	":ArrivalDelay" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":OnlineBoarding" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":CustomerGender" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":Cleanliness" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":CustomerSatisfaction" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":SeatComfort" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":Departure" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":CustomerType" -> ":CustomerFeedback" [ label = "rdfs:subClassOf" ];
+	":OnlineBooking" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":OnlineSupport" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":GateLocation" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":FlightClass" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":Wifi" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":CustomerFeedback" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":LegRoomService" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":CheckinService" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":EvaluationItem" -> ":CustomerFeedback" [ label = "rdfs:subClassOf" ];
+	":TypeOfTravel" -> ":CustomerFeedback" [ label = "rdfs:subClassOf" ];
+	":FoodAndDrink" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+	":DepartureDelay" -> ":EvaluationItem" [ label = "rdfs:subClassOf" ];
+
+}

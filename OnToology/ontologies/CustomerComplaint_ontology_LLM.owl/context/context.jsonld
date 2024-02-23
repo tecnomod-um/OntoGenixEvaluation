@@ -1,0 +1,218 @@
+{
+  "@context" : {
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "companyName" : {
+      "@id" : "https://vocab.um.es#companyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "subIssueDescription" : {
+      "@id" : "https://vocab.um.es#subIssueDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dateSentToCompany" : {
+      "@id" : "https://vocab.um.es#dateSentToCompany",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "responseToConsumer" : {
+      "@id" : "https://vocab.um.es#responseToConsumer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "stateCode" : {
+      "@id" : "https://vocab.um.es#stateCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "CustomerComplaint" : {
+      "@id" : "https://vocab.um.es#CustomerComplaint"
+    },
+    "hasProblem" : {
+      "@id" : "https://vocab.um.es#hasProblem",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isDisputed" : {
+      "@id" : "https://vocab.um.es#isDisputed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Product" : {
+      "@id" : "https://vocab.um.es#Product"
+    },
+    "complaintNarrative" : {
+      "@id" : "https://vocab.um.es#complaintNarrative",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "tags" : {
+      "@id" : "https://vocab.um.es#tags",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Resolution" : {
+      "@id" : "https://vocab.um.es#Resolution"
+    },
+    "hasProblemSubCategory" : {
+      "@id" : "https://vocab.um.es#hasProblemSubCategory",
+      "@type" : "@id"
+    },
+    "consentProvided" : {
+      "@id" : "https://vocab.um.es#consentProvided",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "subProductType" : {
+      "@id" : "https://vocab.um.es#subProductType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ConsumerGrievance" : {
+      "@id" : "https://vocab.um.es#ConsumerGrievance"
+    },
+    "ConsumerFeedback" : {
+      "@id" : "https://vocab.um.es#ConsumerFeedback"
+    },
+    "complaintID" : {
+      "@id" : "https://vocab.um.es#complaintID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasResolution" : {
+      "@id" : "https://vocab.um.es#hasResolution",
+      "@type" : "@id"
+    },
+    "Issue" : {
+      "@id" : "https://vocab.um.es#Issue"
+    },
+    "ServiceComplaint" : {
+      "@id" : "https://vocab.um.es#ServiceComplaint"
+    },
+    "Territory" : {
+      "@id" : "https://vocab.um.es#Territory"
+    },
+    "productType" : {
+      "@id" : "https://vocab.um.es#productType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Company" : {
+      "@id" : "https://vocab.um.es#Company"
+    },
+    "hasCompanyResponse" : {
+      "@id" : "https://vocab.um.es#hasCompanyResponse",
+      "@type" : "@id"
+    },
+    "IssueDetail" : {
+      "@id" : "https://vocab.um.es#IssueDetail"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "ProblemSubCategory" : {
+      "@id" : "https://vocab.um.es#ProblemSubCategory"
+    },
+    "CustomerFeedback" : {
+      "@id" : "https://vocab.um.es#CustomerFeedback"
+    },
+    "dateReceived" : {
+      "@id" : "https://vocab.um.es#dateReceived",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "ProblemOfComplaint" : {
+      "@id" : "https://vocab.um.es#ProblemOfComplaint"
+    },
+    "responseProvidedByCompany" : {
+      "@id" : "https://vocab.um.es#responseProvidedByCompany"
+    },
+    "CompanyResponse" : {
+      "@id" : "https://vocab.um.es#CompanyResponse"
+    },
+    "zipCode" : {
+      "@id" : "https://vocab.um.es#zipCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "fairURI" : {
+      "@id" : "https://vocab.um.es#fairURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "ClientComplaint" : {
+      "@id" : "https://vocab.um.es#ClientComplaint"
+    },
+    "involvesCompany" : {
+      "@id" : "https://vocab.um.es#involvesCompany",
+      "@type" : "@id"
+    },
+    "locatedIn" : {
+      "@id" : "https://vocab.um.es#locatedIn",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "State" : {
+      "@id" : "https://vocab.um.es#State"
+    },
+    "hasSubProduct" : {
+      "@id" : "https://vocab.um.es#hasSubProduct",
+      "@type" : "@id"
+    },
+    "publicResponse" : {
+      "@id" : "https://vocab.um.es#publicResponse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "timelyResponse" : {
+      "@id" : "https://vocab.um.es#timelyResponse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "issueDescription" : {
+      "@id" : "https://vocab.um.es#issueDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "submissionMethod" : {
+      "@id" : "https://vocab.um.es#submissionMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "relatedToProduct" : {
+      "@id" : "https://vocab.um.es#relatedToProduct",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "SubProduct" : {
+      "@id" : "https://vocab.um.es#SubProduct"
+    },
+    "CompanyFeedback" : {
+      "@id" : "https://vocab.um.es#CompanyFeedback"
+    },
+    "FederalDistrict" : {
+      "@id" : "https://vocab.um.es#FederalDistrict"
+    }
+  }
+}

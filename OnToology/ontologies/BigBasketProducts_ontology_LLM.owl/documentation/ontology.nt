@@ -1,0 +1,346 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#altLabel
+<http://www.w3.org/2000/01/rdf-schema#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/category
+<http://schema.org/category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/category> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#Category> .
+<http://schema.org/category> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#SubCategory> .
+# 
+# https://vocab.um.es#Brand
+<https://vocab.um.es#Brand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+# 
+# https://vocab.um.es#Category
+<https://vocab.um.es#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/category> .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+# 
+# https://vocab.um.es#SubCategory
+<https://vocab.um.es#SubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+# 
+# https://vocab.um.es#eligibleQuantity
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Offer> .
+# 
+# https://vocab.um.es#hasOffer
+<https://vocab.um.es#hasOffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Offer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/eligibleQuantity
+<http://schema.org/eligibleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/eligibleQuantity> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#Quantity> .
+<http://schema.org/eligibleQuantity> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#eligibleQuantity> .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#ProductName> .
+# 
+# http://schema.org/priceCurrency
+<http://schema.org/priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/priceSpecification> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Offer> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/priceCurrency> <http://purl.org/dc/elements/1.1/description> "This property specifies the type of currency in which the price of the product is expressed." .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#altLabel> "CurrencyCode" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#altLabel> "MonetaryCurrency" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#altLabel> "PaymentCurrency" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#altLabel> "PriceCurrencyCode" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#altLabel> "TransactionCurrency" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "The currency (in 3-letter ISO 4217 format) of the price and price specification." .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/priceCurrency> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency" .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.currency-iso.org/en/home/tables/table-a1.html> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# http://schema.org/priceSpecification
+<http://schema.org/priceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#DiscountPrice> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#Price> .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://vocab.um.es#Absolute_Url> .
+# 
+# https://vocab.um.es#Absolute_Url
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/url> .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://vocab.um.es#Absolute_Url> <http://purl.org/dc/elements/1.1/description> "This property represents the web address where a product can be found and is essential for online identification and retrieval." .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique URL of a product, used to identify the product on the web." .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/sales_product#Absolute_Url> .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product Link"@en .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product URL"@en .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product Unique Resource Locator"@en .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product Web Address"@en .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product Web Link"@en .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Absolute URL" .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/url> .
+<https://vocab.um.es#Absolute_Url> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# https://vocab.um.es#Brand
+<https://vocab.um.es#Brand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://vocab.um.es#BrandName
+<https://vocab.um.es#BrandName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/name> .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#BrandName> <http://purl.org/dc/elements/1.1/description> "This property represents the textual name of a brand for a product. It is used to identify the manufacturer or company that created the product."@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Brand Identifier"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Company Name"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Manufacturer Name"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Brand"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Trade Name"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the brand associated with the product."@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/BrandName> .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#label> "Brand Name"@en .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/brand> .
+<https://vocab.um.es#BrandName> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# https://vocab.um.es#Category
+<https://vocab.um.es#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://vocab.um.es#DiscountPrice
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Offer> .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "The discounted price at which the product is offered to the consumer."@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#DiscountPrice> .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Discounted Price"@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2004/02/skos/core#altLabel> "Offer Price"@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2004/02/skos/core#altLabel> "Promotional Price"@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2004/02/skos/core#altLabel> "Reduced Price"@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2004/02/skos/core#altLabel> "Sale Price"@en .
+<https://vocab.um.es#DiscountPrice> <http://www.w3.org/2004/02/skos/core#altLabel> "Special Offer Price"@en .
+# 
+# https://vocab.um.es#FAIR_URI
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#FAIR_URI> <http://purl.org/dc/elements/1.1/description> "This property represents the Findable, Accessible, Interoperable, and Reusable (FAIR) unique identifier for a product, which facilitates the discovery and integration of the product data across various platforms and systems." .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#comment> "A globally unique identifier for a product that aligns with the FAIR data principles." .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/FAIR_URI> .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "Identifiant FAIR du Produit"@fr .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "Identificador FAIR del Producto"@es .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "Identificativo FAIR del Prodotto"@it .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "Product FAIR Identifier"@en .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "Produkt FAIR-Kennung"@de .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#label> "FAIR Unique Resource Identifier" .
+<https://vocab.um.es#FAIR_URI> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/identifier> .
+# 
+# https://vocab.um.es#Image_Url
+<https://vocab.um.es#Image_Url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/url> .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://vocab.um.es#Image_Url> <http://purl.org/dc/elements/1.1/description> "This property represents the location on the web where an image of the product can be found. It is unique for each product and is used to visually identify products in digital platforms."@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Image"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Image Link"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Photo Link"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Picture URL"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Visual URL"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#comment> "A URL pointing to an image of the product. Provides a visual representation of the product."@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/sales_product#Image_Url> .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#label> "Product Image URL"@en .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/Product> .
+<https://vocab.um.es#Image_Url> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# https://vocab.um.es#Price
+<https://vocab.um.es#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/priceSpecification> .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Offer> .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://vocab.um.es#Price> <http://purl.org/dc/elements/1.1/description> "This property represents the monetary cost of a product in a given currency."@en .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Cost" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#altLabel> "ListPrice" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#altLabel> "OriginalPrice" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#altLabel> "RetailPrice" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#altLabel> "StandardPrice" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "The original price of the product before any discounts." .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Price> .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#label> "Price" .
+<https://vocab.um.es#Price> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/price> .
+# 
+# https://vocab.um.es#ProductName
+<https://vocab.um.es#ProductName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#sales_product> .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the product as it is labeled and marketed."@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ProductName> .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2000/01/rdf-schema#label> "Product Name"@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2004/02/skos/core#altLabel> "Goods Name"@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2004/02/skos/core#altLabel> "Item Name"@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2004/02/skos/core#altLabel> "Merchandise Name"@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2004/02/skos/core#altLabel> "Product Title"@en .
+<https://vocab.um.es#ProductName> <http://www.w3.org/2004/02/skos/core#altLabel> "Trade Name"@en .
+# 
+# https://vocab.um.es#Quantity
+<https://vocab.um.es#Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/eligibleQuantity> .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Offer> .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#Quantity> <http://purl.org/dc/elements/1.1/description> "This property represents the available quantity of a product. It is expressed as a text string that can include units of measure." .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Available Quantity" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#altLabel> "In-Stock Quantity" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Inventory Count" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Quantity in Stock" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Stock Level" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of the product that is available or in stock." .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Quantity> .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity" .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/QuantitativeValue> .
+<https://vocab.um.es#Quantity> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# https://vocab.um.es#SubCategory
+<https://vocab.um.es#SubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://vocab.um.es#eligibleQuantity
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Offer
+<http://schema.org/Offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Offer> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#hasOffer> .
+<http://schema.org/Offer> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#sales_product> .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Product> .
+<http://schema.org/Offer> <http://purl.org/dc/elements/1.1/description> "This entity represents the details of an offer, including pricing information, associated with a product."@en .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#comment> "An offer to transfer some rights to an item or to provide a service for a certain price." .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Offer> .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#label> "Offer" .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/Offer> .
+# 
+# http://schema.org/Product
+<http://schema.org/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Product> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#sales_product> .
+# 
+# https://vocab.um.es#hasOffer
+<https://vocab.um.es#hasOffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#sales_product
+<https://vocab.um.es#sales_product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Product> .
+<https://vocab.um.es#sales_product> <http://purl.org/dc/elements/1.1/description> "This class encompasses all the characteristics of a product available for sale, such as its name, brand, category, and associated offers."@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#comment> "A product entity that represents an item for sale, including its metadata and commercial offers." .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/sales_product> .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity"@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Merchandise"@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Product for Sale"@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Retail Item"@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Trade Good"@en .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#label> "Sales Product" .
+<https://vocab.um.es#sales_product> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/Product> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#comment> "The brand associated with a product, which is a name given by the maker or owner of the product." .
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Brand> .
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#label> "Brand" .
+<https://vocab.um.es#Brand> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/Product> .
+<https://vocab.um.es#Brand> <http://www.w3.org/2004/02/skos/core#altLabel> "Brand Name" .
+<https://vocab.um.es#Brand> <http://www.w3.org/2004/02/skos/core#altLabel> "Maker's Mark" .
+<https://vocab.um.es#Brand> <http://www.w3.org/2004/02/skos/core#altLabel> "Manufacturer" .
+<https://vocab.um.es#Brand> <http://www.w3.org/2004/02/skos/core#altLabel> "Product Brand" .
+<https://vocab.um.es#Brand> <http://www.w3.org/2004/02/skos/core#altLabel> "Trade Name" .
+# 
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Merchandise Category"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Classification"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Line"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Segment"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#altLabel> "Product Type"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "A category to which the product belongs within the predefined set of categories."@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#Category> .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Product Category"@en .
+<https://vocab.um.es#Category> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#hasCategoryCode> .
+<https://vocab.um.es#Category> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A more specific category that the product falls under within its broader category." .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/SubCategory> .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#label> "SubCategory" .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/Product> .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2004/02/skos/core#altLabel> "Niche Category" .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2004/02/skos/core#altLabel> "Product SubCategory" .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2004/02/skos/core#altLabel> "Secondary Category" .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2004/02/skos/core#altLabel> "Specialized Category" .
+<https://vocab.um.es#SubCategory> <http://www.w3.org/2004/02/skos/core#altLabel> "Sub-Classification" .
+# 
+<https://vocab.um.es#eligibleQuantity> <http://purl.org/dc/elements/1.1/description> "This property specifies the quantity in which the product is available under a particular offer. It is a textual representation of the product's quantity, which may include units of measure."@en .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity of the product that is available for the offer."@en .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/eligibleQuantity> .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "berechtigte Menge"@de .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "cantidad elegible"@es .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "eligible quantity"@en .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantità ammissibile"@it .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantité éligible"@fr .
+<https://vocab.um.es#eligibleQuantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/eligibleQuantity> .
+# 
+<https://vocab.um.es#hasOffer> <http://purl.org/dc/elements/1.1/description> "This property links a sales product to the offer that applies to it, including details such as price and discounts."@en .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a product and its sales offer."@en .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/hasOffer> .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#label> "a une offre"@fr .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#label> "has offer"@en .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Angebot"@de .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#label> "tiene oferta"@es .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#label> "有优惠"@zh .
+<https://vocab.um.es#hasOffer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/priceSpecification> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

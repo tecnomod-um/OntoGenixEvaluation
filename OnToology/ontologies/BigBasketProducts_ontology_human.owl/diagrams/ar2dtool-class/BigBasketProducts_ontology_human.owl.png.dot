@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://schema.org/Product" "https://schema.org/Offer" "https://purl.org/ontologies/MT/sales_product" ; /*classes style*/
+	"https://schema.org/eligibleQuantity" -> "https://vocab.um.es/quantity" [ label = "owl:equivalentProperty" ];
+	"https://purl.org/ontologies/MT/sales_product" -> "https://schema.org/Offer" [ label = "owl:disjointWith" ];
+	"https://purl.org/ontologies/MT/sales_product" -> "https://schema.org/Product" [ label = "owl:equivalentClass" ];
+	"https://purl.org/ontologies/MT/BrandName" -> "https://schema.org/brand" [ label = "owl:equivalentProperty" ];
+	"https://schema.org/price" -> "https://vocab.um.es/discount_price" [ label = "owl:propertyDisjointWith" ];
+	"https://schema.org/price" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "https://schema.org/image" [ label = "owl:onProperty" ];
+	"NULL" -> "https://schema.org/price" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://schema.org/url" [ label = "owl:onProperty" ];
+	"NULL" -> "-11b0b5a0:18dd5e6491d:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "https://vocab.um.es/quantity" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:anyURI" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://schema.org/offers" [ label = "owl:onProperty" ];
+	"NULL" -> "https://vocab.um.es/subcategory" [ label = "owl:onProperty" ];
+	"NULL" -> "-11b0b5a0:18dd5e6491d:-7ff1" [ label = "owl:unionOf" ];
+	"NULL" -> "xsd:double" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-11b0b5a0:18dd5e6491d:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "https://schema.org/category" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "https://schema.org/priceCurrency" [ label = "owl:onProperty" ];
+	"NULL" -> "-11b0b5a0:18dd5e6491d:-7ffb" [ label = "owl:oneOf" ];
+	"NULL" -> "https://schema.org/Offer" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "https://vocab.um.es/discount_price" [ label = "owl:onProperty" ];
+	"NULL" -> "https://purl.org/ontologies/MT/BrandName" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:allValuesFrom" ];
+	"https://vocab.um.es/discount_price" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:anyURI" [ label = "https://schema.org/image" ];
+	"https://purl.org/ontologies/MT/sales_product" -> "https://schema.org/Offer" [ label = "https://schema.org/offers" ];
+	"https://schema.org/Offer" -> "xsd:string" [ label = "https://vocab.um.es/quantity" ];
+	"owl:Thing" -> "xsd:anyURI" [ label = "https://schema.org/url" ];
+	"owl:Thing" -> "xsd:double" [ label = "https://schema.org/price" ];
+	"https://schema.org/Offer" -> "https://purl.org/ontologies/MT/sales_product" [ label = "https://schema.org/itemOffered" ];
+	"owl:Thing" -> "xsd:string" [ label = "https://schema.org/category" ];
+	"owl:Thing" -> "xsd:string" [ label = "https://vocab.um.es/subcategory" ];
+	"https://purl.org/ontologies/MT/sales_product" -> "xsd:string" [ label = "https://schema.org/brand" ];
+	"owl:Thing" -> "-11b0b5a0:18dd5e6491d:-7ffc" [ label = "https://schema.org/priceCurrency" ];
+	"owl:Thing" -> "xsd:double" [ label = "https://vocab.um.es/discount_price" ];
+
+}

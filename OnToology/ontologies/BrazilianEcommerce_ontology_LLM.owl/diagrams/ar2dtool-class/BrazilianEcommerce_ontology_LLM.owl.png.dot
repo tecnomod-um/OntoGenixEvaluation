@@ -1,0 +1,50 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "507d8e35:18dd5e66c11:-7ff1" "507d8e35:18dd5e66c11:-7ffc" "https://vocab.um.es#City" "https://vocab.um.es#Customer" "https://vocab.um.es#State" "https://vocab.um.es#ZipCodePrefix" ; /*classes style*/
+	"https://vocab.um.es#hasCustomerZipCodePrefix" -> "507d8e35:18dd5e66c11:-7ff5" [ label = "owl:withRestrictions" ];
+	"https://vocab.um.es#hasZipCodePrefix" -> "xsd:string" [ label = "owl:equivalentProperty" ];
+	"https://vocab.um.es#hasZipCodePrefix" -> "http://www.w3.org/2006/vcard/ns#postal-code" [ label = "rdfs:seeAlso" ];
+	"https://vocab.um.es#ZipCodePrefix" -> "http://dbpedia.org/resource/Postal_code" [ label = "rdfs:seeAlso" ];
+	"https://vocab.um.es#ZipCodePrefix" -> "https://vocab.um.es#PostalCodeSegment" [ label = "owl:equivalentClass" ];
+	"https://vocab.um.es#Customer" -> "foaf:Person" [ label = "owl:equivalentClass" ];
+	"https://vocab.um.es#Customer" -> "https://vocab.um.es#Customer" [ label = "foaf:isPrimaryTopicOf" ];
+	"https://vocab.um.es#hasCustomerRef" -> "https://vocab.um.es#FAIR_URI" [ label = "rdfs:seeAlso" ];
+	"https://vocab.um.es#hasCustomerRef" -> "xsd:string" [ label = "owl:equivalentProperty" ];
+	"https://vocab.um.es#hasCustomerRef" -> "https://vocab.um.es#customer_unique_id" [ label = "rdfs:seeAlso" ];
+	"https://vocab.um.es#hasCustomerRef" -> "https://vocab.um.es#customer_id" [ label = "rdfs:seeAlso" ];
+	"https://vocab.um.es#hasCustomerRef" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff0" [ label = "owl:unionOf" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff2" [ label = "rdf:first" ];
+	"NULL" -> "https://vocab.um.es#Locale" [ label = "rdf:first" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "https://vocab.um.es#Town" [ label = "rdf:first" ];
+	"NULL" -> "https://vocab.um.es#Customer" [ label = "rdf:first" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "https://vocab.um.es#MetropolitanArea" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7fec" [ label = "owl:unionOf" ];
+	"NULL" -> "https://vocab.um.es#ZipCodePrefix" [ label = "rdf:first" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff4" [ label = "rdf:first" ];
+	"NULL" -> "https://vocab.um.es#State" [ label = "rdf:first" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "https://vocab.um.es#City" [ label = "rdf:first" ];
+	"NULL" -> "507d8e35:18dd5e66c11:-7ffb" [ label = "owl:oneOf" ];
+	"NULL" -> "https://vocab.um.es#Municipality" [ label = "rdf:first" ];
+	"NULL" -> "https://vocab.um.es#UrbanArea" [ label = "rdf:first" ];
+	"https://vocab.um.es#City" -> "507d8e35:18dd5e66c11:-7ffc" [ label = "owl:equivalentClass" ];
+	"https://vocab.um.es#Customer" -> "xsd:string" [ label = "https://vocab.um.es#hasCustomerUniqueID" ];
+	"https://vocab.um.es#City" -> "https://vocab.um.es#State" [ label = "https://vocab.um.es#hasState" ];
+	"https://vocab.um.es#Customer" -> "xsd:string" [ label = "https://vocab.um.es#hasCustomerID" ];
+	"https://vocab.um.es#Customer" -> "xsd:integer" [ label = "https://vocab.um.es#hasCustomerZipCodePrefix" ];
+	"507d8e35:18dd5e66c11:-7ff1" -> "https://vocab.um.es#City" [ label = "https://vocab.um.es#hasCity" ];
+	"https://vocab.um.es#Customer" -> "xsd:string" [ label = "https://vocab.um.es#hasCustomerRef" ];
+	"507d8e35:18dd5e66c11:-7fed" -> "https://vocab.um.es#ZipCodePrefix" [ label = "https://vocab.um.es#hasZipCodePrefix" ];
+
+}
