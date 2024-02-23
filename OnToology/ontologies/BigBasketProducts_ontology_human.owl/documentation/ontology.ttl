@@ -1,0 +1,199 @@
+@prefix : <https://vocab.um.es#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://vocab.um.es#> .
+
+<https://vocab.um.es> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/itemOffered
+<https://schema.org/itemOffered> rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf <https://schema.org/offers> ;
+                                 rdfs:domain <https://schema.org/Offer> ;
+                                 rdfs:range <https://purl.org/ontologies/MT/sales_product> ;
+                                 rdfs:label "item offered"@en .
+
+
+###  https://schema.org/offers
+<https://schema.org/offers> rdf:type owl:ObjectProperty ;
+                            rdfs:domain <https://purl.org/ontologies/MT/sales_product> ;
+                            rdfs:range <https://schema.org/Offer> ;
+                            rdfs:label "offers"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://purl.org/ontologies/MT/BrandName
+<https://purl.org/ontologies/MT/BrandName> rdf:type owl:DatatypeProperty ;
+                                           owl:equivalentProperty <https://schema.org/brand> .
+
+
+###  https://schema.org/brand
+<https://schema.org/brand> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://purl.org/ontologies/MT/sales_product> ;
+                           rdfs:range xsd:string .
+
+
+###  https://schema.org/category
+<https://schema.org/category> rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:string .
+
+
+###  https://schema.org/eligibleQuantity
+<https://schema.org/eligibleQuantity> rdf:type owl:DatatypeProperty ;
+                                      owl:equivalentProperty <https://vocab.um.es/quantity> .
+
+
+###  https://schema.org/image
+<https://schema.org/image> rdf:type owl:DatatypeProperty ;
+                           rdfs:range xsd:anyURI .
+
+
+###  https://schema.org/price
+<https://schema.org/price> rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:range xsd:double ;
+                           owl:propertyDisjointWith <https://vocab.um.es/discount_price> .
+
+
+###  https://schema.org/priceCurrency
+<https://schema.org/priceCurrency> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                owl:oneOf [ rdf:type rdf:List ;
+                                                            rdf:first "EUR" ;
+                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                       rdf:first "USD" ;
+                                                                       rdf:rest rdf:nil
+                                                                     ]
+                                                          ]
+                                              ] ;
+                                   rdfs:comment "price currency is only accepted in dollars or euro"@en .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:anyURI .
+
+
+###  https://vocab.um.es/discount_price
+<https://vocab.um.es/discount_price> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                     rdf:type owl:FunctionalProperty ;
+                                     rdfs:range xsd:double ;
+                                     <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+                                     <http://purl.org/dc/elements/1.1/date> "2023-06-07T08:58:54Z"^^xsd:dateTime .
+
+
+###  https://vocab.um.es/quantity
+<https://vocab.um.es/quantity> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <https://schema.org/Offer> ;
+                               rdfs:range xsd:string ;
+                               <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+                               <http://purl.org/dc/elements/1.1/date> "2023-06-07T09:16:31Z"^^xsd:dateTime ;
+                               rdfs:comment """This is a complex datatype, e.g.:
+2 kg
+12 pcs
+5x6 pcs
+500 ml
+1 L
+1 L each
+2x200 g
+1.2 kg
+3x(3x125 g)
+Combo
+2x1L"""@en .
+
+
+###  https://vocab.um.es/subcategory
+<https://vocab.um.es/subcategory> rdf:type owl:DatatypeProperty ;
+                                  rdfs:range xsd:string ;
+                                  <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+                                  <http://purl.org/dc/elements/1.1/date> "2023-06-07T09:25:34Z"^^xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/ontologies/MT/sales_product
+<https://purl.org/ontologies/MT/sales_product> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://schema.org/Product> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://purl.org/ontologies/MT/BrandName> ;
+                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                     owl:onDataRange xsd:string
+                                                                   ] ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://schema.org/offers> ;
+                                                                 owl:allValuesFrom <https://schema.org/Offer>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://schema.org/category> ;
+                                                                 owl:someValuesFrom xsd:string
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://schema.org/image> ;
+                                                                 owl:someValuesFrom xsd:anyURI
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://schema.org/url> ;
+                                                                 owl:someValuesFrom xsd:anyURI
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://vocab.um.es/subcategory> ;
+                                                                 owl:someValuesFrom xsd:string
+                                                               ] ;
+                                               owl:disjointWith <https://schema.org/Offer> .
+
+
+###  https://schema.org/Offer
+<https://schema.org/Offer> rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Class ;
+                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://schema.org/price> ;
+                                                             owl:someValuesFrom xsd:double
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://vocab.um.es/discount_price> ;
+                                                             owl:someValuesFrom xsd:double
+                                                           ]
+                                                         )
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://schema.org/priceCurrency> ;
+                                             owl:allValuesFrom xsd:string
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://vocab.um.es/quantity> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:string
+                                           ] ;
+                           rdfs:label "Offer"@en .
+
+
+###  https://schema.org/Product
+<https://schema.org/Product> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

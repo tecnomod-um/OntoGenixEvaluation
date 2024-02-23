@@ -1,0 +1,105 @@
+{
+  "@context" : {
+    "PriceType" : {
+      "@id" : "https://vocab.um.es/PriceType"
+    },
+    "TsalesCountry" : {
+      "@id" : "https://purl.org/TsalesCountry",
+      "@type" : "@id"
+    },
+    "SalesArticle" : {
+      "@id" : "https://purl.org/ontologies/MT/SalesArticle"
+    },
+    "Country" : {
+      "@id" : "https://schema.org/Country"
+    },
+    "Tidentifier" : {
+      "@id" : "https://purl.org/Tidentifier"
+    },
+    "Product" : {
+      "@id" : "https://schema.org/Product"
+    },
+    "Customer" : {
+      "@id" : "https://vocab.um.es#Customer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Invoice" : {
+      "@id" : "https://schema.org/Invoice"
+    },
+    "InvoicePrice" : {
+      "@id" : "https://schema.org/InvoicePrice"
+    },
+    "UnitPriceSpecification" : {
+      "@id" : "https://schema.org/UnitPriceSpecification"
+    },
+    "gtin" : {
+      "@id" : "https://schema.org/gtin"
+    },
+    "GTIN_EAN" : {
+      "@id" : "https://purl.org/ontologies/MT/GTIN_EAN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "descriptionProduct" : {
+      "@id" : "https://vocab.um.es#descriptionProduct",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProduct" : {
+      "@id" : "https://vocab.um.es#hasProduct",
+      "@type" : "@id"
+    },
+    "quantity" : {
+      "@id" : "https://vocab.um.es/quantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Tcomment" : {
+      "@id" : "https://purl.org/Tcomment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "https://schema.org/identifier"
+    },
+    "hasCustomer" : {
+      "@id" : "https://vocab.um.es#hasCustomer",
+      "@type" : "@id"
+    },
+    "priceType" : {
+      "@id" : "https://schema.org/priceType",
+      "@type" : "@id"
+    },
+    "priceCurrency" : {
+      "@id" : "https://schema.org/priceCurrency"
+    },
+    "ThasSalesArticle" : {
+      "@id" : "https://purl.org/ThasSalesArticle",
+      "@type" : "@id"
+    },
+    "customer_id" : {
+      "@id" : "https://vocab.um.es/customer_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "date" : {
+      "@id" : "https://vocab.um.es/date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PriceSpecification" : {
+      "@id" : "https://schema.org/PriceSpecification",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "https://schema.org/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasCountry" : {
+      "@id" : "https://vocab.um.es#hasCountry",
+      "@type" : "@id"
+    }
+  }
+}

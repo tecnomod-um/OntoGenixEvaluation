@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:TypeOfTravel" "base:Satisfaction" "base:FlightClass" "base:EvaluationItem" "base:CustomerType" "base:CustomerGender" "base:CustomerFeedback" ; /*classes style*/
+	"base:CustomerFeedback" -> "base:CustomerGender" [ label = "base:has_customer_gender" ];
+	"base:CustomerFeedback" -> "xsd:integer" [ label = "base:has_flight_distance" ];
+	"base:CustomerFeedback" -> "base:FlightClass" [ label = "base:has_flight_class" ];
+	"base:CustomerFeedback" -> "base:Satisfaction" [ label = "base:has_customer_satisfaction" ];
+	"base:CustomerFeedback" -> "base:CustomerType" [ label = "base:has_customer_type" ];
+	"base:CustomerFeedback" -> "base:EvaluationItem" [ label = "base:has_evaluation_item" ];
+	"base:CustomerFeedback" -> "xsd:integer" [ label = "base:has_customer_age" ];
+	"base:CustomerFeedback" -> "base:TypeOfTravel" [ label = "base:has_type_of_travel" ];
+
+}

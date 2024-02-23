@@ -1,0 +1,241 @@
+<https://vocab.um.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_gender> <http://www.w3.org/2000/01/rdf-schema#label> "has customer gender"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_satisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "has customer satisfaction"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_type> <http://www.w3.org/2000/01/rdf-schema#label> "has customer type"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_evaluation_item> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluation item"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_class> <http://www.w3.org/2000/01/rdf-schema#label> "has flight class"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_type_of_travel> <http://www.w3.org/2000/01/rdf-schema#label> "has type of travel"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_customer_age> <http://www.w3.org/2000/01/rdf-schema#label> "has customer age"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#has_flight_distance> <http://www.w3.org/2000/01/rdf-schema#label> "has flight distance" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "customer feedback"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender> <http://www.w3.org/2000/01/rdf-schema#label> "customer gender"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "customer type"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> <http://www.w3.org/2000/01/rdf-schema#label> "evaluation item"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass> <http://www.w3.org/2000/01/rdf-schema#label> "flight class"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "customer satisfaction"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#label> "type of travel"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "In minutes"@en .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "arrival delay"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BaggageHandling> <http://www.w3.org/2000/01/rdf-schema#label> "baggage handling"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Business> <http://www.w3.org/2000/01/rdf-schema#label> "business"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#BusinessTravel> <http://www.w3.org/2000/01/rdf-schema#label> "business travel"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "checkin service"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "cleanliness"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Departure> <http://www.w3.org/2000/01/rdf-schema#label> "departure"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "In minutes"@en .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "departure delay"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FlightClass> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Eco> <http://www.w3.org/2000/01/rdf-schema#label> "eco"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Female> <http://www.w3.org/2000/01/rdf-schema#label> "female"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "food and drink"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#GateLocation> <http://www.w3.org/2000/01/rdf-schema#label> "gate location"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#label> "leg room service"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#LoyalCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "loyal customer"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerGender> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Male> <http://www.w3.org/2000/01/rdf-schema#label> "male"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnBoardService> <http://www.w3.org/2000/01/rdf-schema#label> "on-board service"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "online boarding"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "easy of online booking"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#label> "online support"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#TypeOfTravel> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#PersonalTravel> <http://www.w3.org/2000/01/rdf-schema#label> "personal travel"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#SeatConfort> <http://www.w3.org/2000/01/rdf-schema#label> "seat confort"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#EvaluationItem> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "wifi"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#CustomerType> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#disloyalCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "disloyal customer"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#dissatisfied> <http://www.w3.org/2000/01/rdf-schema#label> "customer dissatisfied"@en .
+# 
+# http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#Satisfaction> .
+<http://www.semanticweb.org/juanm/ontologies/2023/5/untitled-ontology-17#satisfied> <http://www.w3.org/2000/01/rdf-schema#label> "customer satisfied"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

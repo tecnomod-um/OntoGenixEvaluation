@@ -1,0 +1,77 @@
+{
+  "@context" : {
+    "url" : {
+      "@id" : "https://schema.org/url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Product" : {
+      "@id" : "https://schema.org/Product"
+    },
+    "brand" : {
+      "@id" : "https://schema.org/brand",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Offer" : {
+      "@id" : "https://schema.org/Offer"
+    },
+    "image" : {
+      "@id" : "https://schema.org/image",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "eligibleQuantity" : {
+      "@id" : "https://schema.org/eligibleQuantity"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "quantity" : {
+      "@id" : "https://vocab.um.es/quantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sales_product" : {
+      "@id" : "https://purl.org/ontologies/MT/sales_product"
+    },
+    "subcategory" : {
+      "@id" : "https://vocab.um.es/subcategory",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "priceCurrency" : {
+      "@id" : "https://schema.org/priceCurrency"
+    },
+    "itemOffered" : {
+      "@id" : "https://schema.org/itemOffered",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "discount_price" : {
+      "@id" : "https://vocab.um.es/discount_price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "category" : {
+      "@id" : "https://schema.org/category",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "https://schema.org/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "BrandName" : {
+      "@id" : "https://purl.org/ontologies/MT/BrandName"
+    },
+    "offers" : {
+      "@id" : "https://schema.org/offers",
+      "@type" : "@id"
+    }
+  }
+}

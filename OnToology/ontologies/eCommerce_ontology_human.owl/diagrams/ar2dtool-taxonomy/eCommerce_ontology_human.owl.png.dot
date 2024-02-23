@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "vocab:PriceType" "schema:InvoicePrice" ; /*classes style*/
+	"schema:InvoicePrice" -> "vocab:PriceType" [ label = "rdfs:subClassOf" ];
+
+}

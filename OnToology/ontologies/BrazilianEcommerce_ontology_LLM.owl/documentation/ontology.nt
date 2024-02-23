@@ -1,0 +1,254 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#maxInclusive
+<http://www.w3.org/2001/XMLSchema#maxInclusive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#minInclusive
+<http://www.w3.org/2001/XMLSchema#minInclusive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/isPrimaryTopicOf
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.um.es#hasCity
+<https://vocab.um.es#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#ZipCodePrefix> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#State> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Customer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#City> .
+<https://vocab.um.es#hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a state, zip code prefix, or customer with a city." .
+<https://vocab.um.es#hasCity> <http://www.w3.org/2000/01/rdf-schema#label> "has city" .
+# 
+# https://vocab.um.es#hasState
+<https://vocab.um.es#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#City> .
+<https://vocab.um.es#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#State> .
+<https://vocab.um.es#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a city with the state it is located in." .
+<https://vocab.um.es#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "is in state" .
+# 
+# https://vocab.um.es#hasZipCodePrefix
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Customer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#City> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#ZipCodePrefix> .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a customer or a city to a specific zip code prefix."@en .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "a le préfixe de code postal"@fr .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "has zip code prefix"@en .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "hat Postleitzahlenpräfix"@de .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "tem prefixo de CEP"@pt .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "tiene prefijo de código postal"@es .
+<https://vocab.um.es#hasZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2006/vcard/ns#postal-code> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.um.es#hasCustomerID
+<https://vocab.um.es#hasCustomerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#Customer> .
+<https://vocab.um.es#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for a customer." .
+<https://vocab.um.es#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#label> "Customer ID" .
+# 
+# https://vocab.um.es#hasCustomerRef
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#Customer> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for a customer, possibly for internal use."@en .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#label> "customer reference"@en .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#FAIR_URI> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#customer_id> .
+<https://vocab.um.es#hasCustomerRef> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#customer_unique_id> .
+# 
+# https://vocab.um.es#hasCustomerUniqueID
+<https://vocab.um.es#hasCustomerUniqueID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasCustomerUniqueID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#Customer> .
+<https://vocab.um.es#hasCustomerUniqueID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#hasCustomerUniqueID> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for a customer, possibly for internal use." .
+<https://vocab.um.es#hasCustomerUniqueID> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Unique ID" .
+# 
+# https://vocab.um.es#hasCustomerZipCodePrefix
+<https://vocab.um.es#hasCustomerZipCodePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasCustomerZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#Customer> .
+<https://vocab.um.es#hasCustomerZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://vocab.um.es#hasCustomerZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#comment> "The prefix of the zip code for the customer's location." .
+<https://vocab.um.es#hasCustomerZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Zip Code Prefix" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#Customer> .
+# 
+# https://vocab.um.es#City
+<https://vocab.um.es#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://vocab.um.es#City> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#oneOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#UrbanArea> .
+<https://vocab.um.es#UrbanArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Town> .
+<https://vocab.um.es#Town> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Municipality> .
+<https://vocab.um.es#Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#MetropolitanArea> .
+<https://vocab.um.es#MetropolitanArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Locale> .
+<https://vocab.um.es#Locale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#City> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://vocab.um.es#Customer
+<https://vocab.um.es#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#Customer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://vocab.um.es#Customer> <http://purl.org/dc/elements/1.1/description> "Represents the details of a customer, including their unique identifiers and location information." .
+<https://vocab.um.es#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual who purchases goods or services from a business." .
+<https://vocab.um.es#Customer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Customer" .
+<https://vocab.um.es#Customer> <http://www.w3.org/2004/02/skos/core#altLabel> "Client" .
+<https://vocab.um.es#Customer> <http://www.w3.org/2004/02/skos/core#altLabel> "Consumer" .
+<https://vocab.um.es#Customer> <http://www.w3.org/2004/02/skos/core#altLabel> "Patron" .
+<https://vocab.um.es#Customer> <http://www.w3.org/2004/02/skos/core#altLabel> "Purchaser" .
+<https://vocab.um.es#Customer> <http://www.w3.org/2004/02/skos/core#altLabel> "Shopper" .
+<https://vocab.um.es#Customer> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <https://vocab.um.es#Customer> .
+# 
+# https://vocab.um.es#PostalCodeSegment
+<https://vocab.um.es#PostalCodeSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#PostalCodeSegment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#ZipCodePrefix> .
+# 
+# https://vocab.um.es#State
+<https://vocab.um.es#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://vocab.um.es#State> <http://purl.org/dc/elements/1.1/description> "Represents the name of the state where the customer resides. States are typically a primary administrative division within a country." .
+<https://vocab.um.es#State> <http://www.w3.org/2000/01/rdf-schema#comment> "A political division within a country, often a sovereign entity or a federated unit within a federal system." .
+<https://vocab.um.es#State> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+<https://vocab.um.es#State> <http://www.w3.org/2004/02/skos/core#altLabel> "Administrative Division" .
+<https://vocab.um.es#State> <http://www.w3.org/2004/02/skos/core#altLabel> "Federal State" .
+<https://vocab.um.es#State> <http://www.w3.org/2004/02/skos/core#altLabel> "Province" .
+<https://vocab.um.es#State> <http://www.w3.org/2004/02/skos/core#altLabel> "Region" .
+<https://vocab.um.es#State> <http://www.w3.org/2004/02/skos/core#altLabel> "Territory" .
+# 
+# https://vocab.um.es#ZipCodePrefix
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://vocab.um.es#ZipCodePrefix> <http://purl.org/dc/elements/1.1/description> "The ZipCodePrefix entity represents the initial segment of a postal code. This segment typically corresponds to a particular geographic region such as a city or a part of a city."@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#comment> "A numerical range that represents the beginning of a postal code for a specific geographic area."@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Postal Code Prefix"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Postal Code Start"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Postcode Prefix"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "ZIP Code Start"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "ZIP Prefix"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Zip Code Prefix"@en .
+<https://vocab.um.es#ZipCodePrefix> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Postal_code> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://vocab.um.es#City
+# 
+# https://vocab.um.es#Locale
+# 
+# https://vocab.um.es#MetropolitanArea
+# 
+# https://vocab.um.es#Municipality
+# 
+# https://vocab.um.es#Town
+# 
+# https://vocab.um.es#UrbanArea
+# 
+_:genid16 <http://www.w3.org/2001/XMLSchema#minInclusive> "1011"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/2001/XMLSchema#maxInclusive> "99435"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://vocab.um.es#City> <http://purl.org/dc/elements/1.1/description> "Represents the concept of a city as understood in the context of customer addresses and geographical locations." .
+<https://vocab.um.es#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city is a large human settlement, generally with extensive systems for housing, transportation, sanitation, utilities, land use, production of goods, and communication." .
+<https://vocab.um.es#City> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+<https://vocab.um.es#City> <http://www.w3.org/2004/02/skos/core#altLabel> "Locale" .
+<https://vocab.um.es#City> <http://www.w3.org/2004/02/skos/core#altLabel> "Metropolitan Area" .
+<https://vocab.um.es#City> <http://www.w3.org/2004/02/skos/core#altLabel> "Municipality" .
+<https://vocab.um.es#City> <http://www.w3.org/2004/02/skos/core#altLabel> "Town" .
+<https://vocab.um.es#City> <http://www.w3.org/2004/02/skos/core#altLabel> "Urban Area" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

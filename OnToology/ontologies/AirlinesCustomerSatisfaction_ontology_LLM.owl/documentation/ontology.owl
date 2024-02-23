@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#member -->
+
+
+    <ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#member"/>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerGender -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasCustomerGender">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#CustomerGender"/>
+        <propertyDisjointWith rdf:resource="https://vocab.um.es#hasCustomerSatisfaction"/>
+        <propertyDisjointWith rdf:resource="https://vocab.um.es#hasCustomerType"/>
+        <propertyDisjointWith rdf:resource="https://vocab.um.es#hasEvaluationItem"/>
+        <propertyDisjointWith rdf:resource="https://vocab.um.es#hasFlightClass"/>
+        <propertyDisjointWith rdf:resource="https://vocab.um.es#hasTypeOfTravel"/>
+        <rdfs:comment xml:lang="en">The gender of the customer providing feedback.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/CustomerFeedback#hasCustomerGender"/>
+        <rdfs:label xml:lang="en">has customer gender</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#hasGender"/>
+        <skos:altLabel xml:lang="en">client gender</skos:altLabel>
+        <skos:altLabel xml:lang="en">customer&apos;s gender</skos:altLabel>
+        <skos:altLabel xml:lang="en">feedback provider gender</skos:altLabel>
+        <skos:altLabel xml:lang="en">gender</skos:altLabel>
+        <skos:altLabel xml:lang="en">gender of respondent</skos:altLabel>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerSatisfaction -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasCustomerSatisfaction">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#CustomerSatisfaction"/>
+        <rdfs:comment xml:lang="en">Represents the overall satisfaction level expressed by the customer regarding their experience.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es#"/>
+        <rdfs:label xml:lang="de">Kundenzufriedenheitsbewertung</rdfs:label>
+        <rdfs:label xml:lang="en">customer satisfaction rating</rdfs:label>
+        <rdfs:label xml:lang="es">valoración de la satisfacción del cliente</rdfs:label>
+        <rdfs:label xml:lang="it">valutazione della soddisfazione del cliente</rdfs:label>
+        <rdfs:label xml:lang="fr">évaluation de la satisfaction client</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerType -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasCustomerType">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#CustomerType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasEvaluationItem -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasEvaluationItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+        <rdfs:subPropertyOf rdf:resource="https://vocab.um.es#hasFeedbackDetail"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Relates a customer feedback to the evaluation items that the feedback addresses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#"/>
+        <rdfs:label xml:lang="en">has evaluation item</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:seeAlso rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <skos:altLabel xml:lang="en">customer feedback evaluation</skos:altLabel>
+        <skos:altLabel xml:lang="en">evaluation item linkage</skos:altLabel>
+        <skos:altLabel xml:lang="en">feedback evaluation aspect</skos:altLabel>
+        <skos:altLabel xml:lang="en">feedback item association</skos:altLabel>
+        <skos:altLabel xml:lang="en">feedback rating item</skos:altLabel>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasFeedbackDetail -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasFeedbackDetail"/>
+    
+
+
+    <!-- https://vocab.um.es#hasFlightClass -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasFlightClass">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#FlightClass"/>
+        <rdfs:comment xml:lang="en">The class of the flight ticket as evaluated by the customer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es#"/>
+        <rdfs:label>flight class</rdfs:label>
+        <skos:altLabel>airline class</skos:altLabel>
+        <skos:altLabel>cabin class</skos:altLabel>
+        <skos:altLabel>service class</skos:altLabel>
+        <skos:altLabel>ticket class</skos:altLabel>
+        <skos:altLabel>travel class</skos:altLabel>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasTypeOfTravel -->
+
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasTypeOfTravel">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#TypeOfTravel"/>
+        <rdfs:comment xml:lang="en">The property that associates a customer&apos;s feedback with the type of travel, such as business or personal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#"/>
+        <rdfs:label>type of travel</rdfs:label>
+        <skos:altLabel>journey type</skos:altLabel>
+        <skos:altLabel>travel category</skos:altLabel>
+        <skos:altLabel>travel classification</skos:altLabel>
+        <skos:altLabel>travel nature</skos:altLabel>
+        <skos:altLabel>travel purpose</skos:altLabel>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://vocab.um.es#ArrivalDelay -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#ArrivalDelay">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasAge -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Property representing the age of a customer in a customer feedback context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#hasAge"/>
+        <rdfs:label xml:lang="de">Alter</rdfs:label>
+        <rdfs:label xml:lang="en">age</rdfs:label>
+        <rdfs:label xml:lang="es">edad</rdfs:label>
+        <rdfs:label xml:lang="it">età</rdfs:label>
+        <rdfs:label xml:lang="fr">âge</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasClassValue -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#hasClassValue">
+        <rdfs:domain rdf:resource="https://vocab.um.es#FlightClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The specific class of the flight ticket (e.g., Economy, Business, First).</rdfs:comment>
+        <rdfs:label xml:lang="en">has class value</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerType -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#hasCustomerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasFlightDistance -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#hasFlightDistance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Property representing the distance of a flight in miles in a customer feedback context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#hasFlightDistance"/>
+        <rdfs:label xml:lang="de">Flugdistanz</rdfs:label>
+        <rdfs:label xml:lang="fr">distance de vol</rdfs:label>
+        <rdfs:label xml:lang="es">distancia de vuelo</rdfs:label>
+        <rdfs:label xml:lang="it">distanza di volo</rdfs:label>
+        <rdfs:label xml:lang="en">flight distance</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasRating -->
+
+
+    <DatatypeProperty rdf:about="https://vocab.um.es#hasRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Property representing the rating given to an evaluation item in a customer feedback context.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that holds the cleanliness rating value for an evaluation item.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#hasRating"/>
+        <rdfs:label xml:lang="de">Bewertung</rdfs:label>
+        <rdfs:label xml:lang="es">calificación</rdfs:label>
+        <rdfs:label xml:lang="fr">notation</rdfs:label>
+        <rdfs:label xml:lang="en">rating</rdfs:label>
+        <rdfs:label xml:lang="it">valutazione</rdfs:label>
+        <rdfs:label>has cleanliness rating</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <Class rdf:about="http://org.semanticweb.owlapi/error#Error1">
+        <equivalentClass rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#ArrivalDelay -->
+
+
+    <Class rdf:about="https://vocab.um.es#ArrivalDelay">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#LongDelay"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#OnTime"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#ShortDelay"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#AverageCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#AverageCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#CateringServiceRating -->
+
+
+    <Class rdf:about="https://vocab.um.es#CateringServiceRating">
+        <equivalentClass rdf:resource="https://vocab.um.es#FoodAndDrink"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#CheckinService">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#AverageCheckinService"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#ExcellentCheckinService"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GoodCheckinService"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#OutstandingCheckinService"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#PoorCheckinService"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the check-in service experienced during their travel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/CheckinService"/>
+        <rdfs:label xml:lang="en">Airport Check-in Evaluation</rdfs:label>
+        <rdfs:label xml:lang="en">Check-in Desk Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Check-in Experience Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Check-in Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Service at Check-in Counter</rdfs:label>
+        <rdfs:label>Check-in Service</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#Service"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Cleanliness -->
+
+
+    <Class rdf:about="https://vocab.um.es#Cleanliness">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#AverageCleanliness"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#ExcellentCleanliness"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GoodCleanliness"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#OutstandingCleanliness"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#PoorCleanliness"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the cleanliness of the airline services and facilities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/Cleanliness"/>
+        <rdfs:label>Cleanliness</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#hasQuality"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerFeedback -->
+
+
+    <Class rdf:about="https://vocab.um.es#CustomerFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Represents the feedback provided by a customer regarding their flight experience.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerGender -->
+
+
+    <Class rdf:about="https://vocab.um.es#CustomerGender">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:label xml:lang="en">Customer Gender</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerSatisfaction -->
+
+
+    <Class rdf:about="https://vocab.um.es#CustomerSatisfaction">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:label xml:lang="en">Customer Satisfaction</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerServiceRating -->
+
+
+    <Class rdf:about="https://vocab.um.es#CustomerServiceRating">
+        <equivalentClass rdf:resource="https://vocab.um.es#OnlineSupport"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerType -->
+
+
+    <Class rdf:about="https://vocab.um.es#CustomerType">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:label xml:lang="en">Customer Type</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Departure -->
+
+
+    <Class rdf:about="https://vocab.um.es#Departure">
+        <equivalentClass rdf:resource="https://vocab.um.es#DepartureDelay"/>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment>Represents the evaluation of the departure delay experienced by a customer.</rdfs:comment>
+        <rdfs:label>Departure Delay Evaluation</rdfs:label>
+        <skos:altLabel>Departure Delay Rating</skos:altLabel>
+        <skos:altLabel>Departure Punctuality Assessment</skos:altLabel>
+        <skos:altLabel>Departure Time Rating</skos:altLabel>
+        <skos:altLabel>Departure Timeliness Feedback</skos:altLabel>
+        <skos:altLabel>Flight Departure Delay Evaluation</skos:altLabel>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#DepartureDelay -->
+
+
+    <Class rdf:about="https://vocab.um.es#DepartureDelay">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#LongDepartureDelay"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#MediumDepartureDelay"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#ShortDepartureDelay"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment>Represents the time delay in minutes for a customer&apos;s departure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/DepartureDelay"/>
+        <rdfs:label>Delay at Departure Gate</rdfs:label>
+        <rdfs:label>Delay in Departure</rdfs:label>
+        <rdfs:label>Departure Delay</rdfs:label>
+        <rdfs:label>Departure Time Delay</rdfs:label>
+        <rdfs:label>Flight Departure Delay</rdfs:label>
+        <rdfs:label>Takeoff Delay</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/terms/created"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/terms/description"/>
+        <rdfs:seeAlso rdf:resource="https://vocab.um.es/DepartureDelay#metadata"/>
+        <versionInfo>1.0</versionInfo>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#EvaluationItem -->
+
+
+    <Class rdf:about="https://vocab.um.es#EvaluationItem">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:label xml:lang="en">Evaluation Item</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#ExcellentCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#ExcellentCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#FlightClass -->
+
+
+    <Class rdf:about="https://vocab.um.es#FlightClass">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Class of the flight ticket which can be one of three unique values.</rdfs:comment>
+        <rdfs:label xml:lang="en">Flight Class</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#FoodAndDrink -->
+
+
+    <Class rdf:about="https://vocab.um.es#FoodAndDrink">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for food and drink quality during the flight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#FoodAndDrink"/>
+        <rdfs:label xml:lang="en">Beverage Quality Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Catering Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Food and Drink Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Inflight Catering Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Inflight Meal Rating</rdfs:label>
+        <rdfs:label xml:lang="en">Meal Quality Rating</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#GateLocation -->
+
+
+    <Class rdf:about="https://vocab.um.es#GateLocation">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#GateLocationRating1"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GateLocationRating2"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GateLocationRating3"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GateLocationRating4"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#GateLocationRating5"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment>A categorical rating representing a customer&apos;s satisfaction with the location of the gate at the airport.</rdfs:comment>
+        <rdfs:label>Gate Location</rdfs:label>
+        <skos:altLabel>Airport Gate Position Rating</skos:altLabel>
+        <skos:altLabel>Boarding Gate Satisfaction Level</skos:altLabel>
+        <skos:altLabel>Customer Gate Location Feedback</skos:altLabel>
+        <skos:altLabel>Gate Proximity Rating</skos:altLabel>
+        <skos:altLabel>Rating for Boarding Gate Proximity</skos:altLabel>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#GoodCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#GoodCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#InflightWifiService -->
+
+
+    <Class rdf:about="https://vocab.um.es#InflightWifiService">
+        <equivalentClass rdf:resource="https://vocab.um.es#Wifi"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#LegRoomService -->
+
+
+    <Class rdf:about="https://vocab.um.es#LegRoomService">
+        <equivalentClass rdf:resource="https://vocab.um.es#LegSpaceEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the leg room service provided during the flight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/LegRoomService"/>
+        <rdfs:label>Leg Room Service</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://vocab.um.es#ComfortEvaluation"/>
+        <skos:altLabel xml:lang="en">Leg Space Rating</skos:altLabel>
+        <skos:altLabel xml:lang="en">Leg Space Service Evaluation</skos:altLabel>
+        <skos:altLabel xml:lang="en">Legroom Comfort Rating</skos:altLabel>
+        <skos:altLabel xml:lang="en">Passenger Leg Room Assessment</skos:altLabel>
+        <skos:altLabel xml:lang="en">Seat Leg Room Rating</skos:altLabel>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#LegSpaceEvaluation -->
+
+
+    <Class rdf:about="https://vocab.um.es#LegSpaceEvaluation"/>
+    
+
+
+    <!-- https://vocab.um.es#OnlineBoarding -->
+
+
+    <Class rdf:about="https://vocab.um.es#OnlineBoarding">
+        <equivalentClass rdf:resource="https://vocab.um.es#WebCheckinService"/>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the online boarding process of an airline.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/OnlineBoarding"/>
+        <rdfs:label>Electronic Boarding Service</rdfs:label>
+        <rdfs:label>Internet Boarding Process</rdfs:label>
+        <rdfs:label>Online Boarding</rdfs:label>
+        <rdfs:label>Self-Service Boarding</rdfs:label>
+        <rdfs:label>Web Check-in Service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OnlineBooking -->
+
+
+    <Class rdf:about="https://vocab.um.es#OnlineBooking">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#Dissatisfied"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#Neutral"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#Satisfied"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#VeryDissatisfied"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#VerySatisfied"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the ease of booking their flight online.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/OnlineBooking"/>
+        <rdfs:label xml:lang="en">Digital Booking</rdfs:label>
+        <rdfs:label xml:lang="en">E-Booking</rdfs:label>
+        <rdfs:label xml:lang="en">Electronic Booking</rdfs:label>
+        <rdfs:label xml:lang="en">Internet Booking</rdfs:label>
+        <rdfs:label xml:lang="en">Web Booking</rdfs:label>
+        <rdfs:label>Online Booking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#OnlineBooking"/>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OnlineSupport -->
+
+
+    <Class rdf:about="https://vocab.um.es#OnlineSupport">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the online support services provided by the airline.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/OnlineSupport"/>
+        <rdfs:label>Online Support</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#AfterSalesService"/>
+        <skos:altLabel xml:lang="en">Digital Support Evaluation</skos:altLabel>
+        <skos:altLabel xml:lang="en">Internet Customer Support Rating</skos:altLabel>
+        <skos:altLabel xml:lang="en">Online Helpdesk Feedback</skos:altLabel>
+        <skos:altLabel xml:lang="en">Virtual Support Assessment</skos:altLabel>
+        <skos:altLabel xml:lang="en">Web Support Rating</skos:altLabel>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OutstandingCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#OutstandingCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#PoorCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#PoorCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#SeatComfort -->
+
+
+    <Class rdf:about="https://vocab.um.es#SeatComfort">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://vocab.um.es#Comfortable"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#Neutral"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#Uncomfortable"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#VeryComfortable"/>
+                    <rdf:Description rdf:about="https://vocab.um.es#VeryUncomfortable"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the comfort of their seat during the flight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/SeatComfort"/>
+        <rdfs:label>Seat Comfort</rdfs:label>
+        <skos:altLabel xml:lang="en">Chair Comfort</skos:altLabel>
+        <skos:altLabel xml:lang="en">Comfort Level</skos:altLabel>
+        <skos:altLabel xml:lang="en">Comfort Rating</skos:altLabel>
+        <skos:altLabel xml:lang="en">Seat Rating</skos:altLabel>
+        <skos:altLabel xml:lang="en">Seating Comfort</skos:altLabel>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#TypeOfTravel -->
+
+
+    <Class rdf:about="https://vocab.um.es#TypeOfTravel">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#CustomerFeedback"/>
+        <rdfs:label xml:lang="en">Type of Travel</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#WebCheckinService -->
+
+
+    <Class rdf:about="https://vocab.um.es#WebCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#Wifi -->
+
+
+    <Class rdf:about="https://vocab.um.es#Wifi">
+        <rdfs:subClassOf rdf:resource="https://vocab.um.es#EvaluationItem"/>
+        <rdfs:comment xml:lang="en">Represents the customer&apos;s rating for the inflight wifi service provided during the flight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/Wifi"/>
+        <rdfs:label>Aircraft Internet Service</rdfs:label>
+        <rdfs:label>Inflight Wifi Service</rdfs:label>
+        <rdfs:label>Onboard Wifi Service</rdfs:label>
+        <rdfs:label>Wifi Service</rdfs:label>
+        <rdfs:label>Wireless Internet on Plane</rdfs:label>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://vocab.um.es#AverageCheckinService -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#AverageCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#AverageCleanliness -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#AverageCleanliness">
+        <rdf:type rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:comment xml:lang="en">A moderate rating for cleanliness, indicating neither satisfaction nor significant dissatisfaction.</rdfs:comment>
+        <rdfs:label>Average Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Comfortable -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Comfortable"/>
+    
+
+
+    <!-- https://vocab.um.es#Dissatisfied -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Dissatisfied"/>
+    
+
+
+    <!-- https://vocab.um.es#ExcellentCheckinService -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ExcellentCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#ExcellentCleanliness -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ExcellentCleanliness">
+        <rdf:type rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:comment xml:lang="en">A high rating for cleanliness, indicating above-average satisfaction.</rdfs:comment>
+        <rdfs:label>Excellent Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#GateLocationRating1 -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocationRating1"/>
+    
+
+
+    <!-- https://vocab.um.es#GateLocationRating2 -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocationRating2"/>
+    
+
+
+    <!-- https://vocab.um.es#GateLocationRating3 -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocationRating3"/>
+    
+
+
+    <!-- https://vocab.um.es#GateLocationRating4 -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocationRating4"/>
+    
+
+
+    <!-- https://vocab.um.es#GateLocationRating5 -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocationRating5"/>
+    
+
+
+    <!-- https://vocab.um.es#GoodCheckinService -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GoodCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#GoodCleanliness -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GoodCleanliness">
+        <rdf:type rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:comment xml:lang="en">A rating for cleanliness that indicates general satisfaction.</rdfs:comment>
+        <rdfs:label>Good Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#LongDelay -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#LongDelay"/>
+    
+
+
+    <!-- https://vocab.um.es#LongDepartureDelay -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#LongDepartureDelay"/>
+    
+
+
+    <!-- https://vocab.um.es#MediumDepartureDelay -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#MediumDepartureDelay"/>
+    
+
+
+    <!-- https://vocab.um.es#Neutral -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Neutral"/>
+    
+
+
+    <!-- https://vocab.um.es#OnTime -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OnTime"/>
+    
+
+
+    <!-- https://vocab.um.es#OutstandingCheckinService -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OutstandingCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#OutstandingCleanliness -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OutstandingCleanliness">
+        <rdf:type rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:comment xml:lang="en">The highest rating for cleanliness, indicating exceptional satisfaction.</rdfs:comment>
+        <rdfs:label>Outstanding Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#PoorCheckinService -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#PoorCheckinService"/>
+    
+
+
+    <!-- https://vocab.um.es#PoorCleanliness -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#PoorCleanliness">
+        <rdf:type rdf:resource="https://vocab.um.es#Cleanliness"/>
+        <rdfs:comment xml:lang="en">The lowest rating for cleanliness, indicating significant dissatisfaction.</rdfs:comment>
+        <rdfs:label>Poor Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Satisfied -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Satisfied"/>
+    
+
+
+    <!-- https://vocab.um.es#ShortDelay -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ShortDelay"/>
+    
+
+
+    <!-- https://vocab.um.es#ShortDepartureDelay -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ShortDepartureDelay"/>
+    
+
+
+    <!-- https://vocab.um.es#Uncomfortable -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Uncomfortable"/>
+    
+
+
+    <!-- https://vocab.um.es#VeryComfortable -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#VeryComfortable"/>
+    
+
+
+    <!-- https://vocab.um.es#VeryDissatisfied -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#VeryDissatisfied"/>
+    
+
+
+    <!-- https://vocab.um.es#VerySatisfied -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#VerySatisfied"/>
+    
+
+
+    <!-- https://vocab.um.es#VeryUncomfortable -->
+
+
+    <NamedIndividual rdf:about="https://vocab.um.es#VeryUncomfortable"/>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">Rating range restriction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://vocab.um.es#ArrivalDelay">
+        <rdfs:comment>Represents the time delay in minutes for a customer&apos;s arrival.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ArrivalDelay"/>
+        <rdfs:label>Arrival Delay</rdfs:label>
+        <rdfs:label>Arrival Time Delay</rdfs:label>
+        <rdfs:label>Delay in Arrival</rdfs:label>
+        <rdfs:label>Flight Arrival Lateness</rdfs:label>
+        <rdfs:label>Lateness in Arrival</rdfs:label>
+        <rdfs:label>Postponement of Arrival</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://vocab.um.es/ArrivalDelay#metadata"/>
+        <versionInfo>1.0</versionInfo>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#AverageCheckinService">
+        <rdfs:comment xml:lang="en">Rating of 2 or 3 out of 5 for check-in service, indicating moderate satisfaction.</rdfs:comment>
+        <rdfs:label>Average Check-in Service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#ExcellentCheckinService">
+        <rdfs:comment xml:lang="en">Rating of 5 out of 5 for check-in service, indicating very high satisfaction.</rdfs:comment>
+        <rdfs:label>Excellent Check-in Service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#GoodCheckinService">
+        <rdfs:comment xml:lang="en">Rating of 4 out of 5 for check-in service, indicating high satisfaction.</rdfs:comment>
+        <rdfs:label>Good Check-in Service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#OutstandingCheckinService">
+        <rdfs:comment xml:lang="en">Rating of 5 out of 5 for check-in service, indicating the highest level of satisfaction.</rdfs:comment>
+        <rdfs:label>Outstanding Check-in Service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#PoorCheckinService">
+        <rdfs:comment xml:lang="en">Rating of 1 out of 5 for check-in service, indicating very low satisfaction.</rdfs:comment>
+        <rdfs:label>Poor Check-in Service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#hasCustomerType">
+        <rdfs:comment xml:lang="en">Property representing the type of customer in a customer feedback context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://vocab.um.es/ontology#hasCustomerType"/>
+        <rdfs:label xml:lang="de">Kundentyp</rdfs:label>
+        <rdfs:label xml:lang="en">customer type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de cliente</rdfs:label>
+        <rdfs:label xml:lang="it">tipo di cliente</rdfs:label>
+        <rdfs:label xml:lang="fr">type de client</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://example.com/contextual-information-about-customer-types"/>
+        <versionInfo>1.0</versionInfo>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,686 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#member
+<http://www.w3.org/2000/01/rdf-schema#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://vocab.um.es#hasCustomerGender
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#CustomerGender> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://vocab.um.es#hasCustomerSatisfaction> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://vocab.um.es#hasCustomerType> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://vocab.um.es#hasEvaluationItem> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://vocab.um.es#hasFlightClass> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://vocab.um.es#hasTypeOfTravel> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of the customer providing feedback."@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/CustomerFeedback#hasCustomerGender> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#label> "has customer gender"@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#hasGender> .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2004/02/skos/core#altLabel> "client gender"@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2004/02/skos/core#altLabel> "customer's gender"@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2004/02/skos/core#altLabel> "feedback provider gender"@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2004/02/skos/core#altLabel> "gender"@en .
+<https://vocab.um.es#hasCustomerGender> <http://www.w3.org/2004/02/skos/core#altLabel> "gender of respondent"@en .
+# 
+# https://vocab.um.es#hasCustomerSatisfaction
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#CustomerSatisfaction> .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the overall satisfaction level expressed by the customer regarding their experience."@en .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "Kundenzufriedenheitsbewertung"@de .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "customer satisfaction rating"@en .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "valoración de la satisfacción del cliente"@es .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "valutazione della soddisfazione del cliente"@it .
+<https://vocab.um.es#hasCustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "évaluation de la satisfaction client"@fr .
+# 
+# https://vocab.um.es#hasCustomerType
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#CustomerType> .
+# 
+# https://vocab.um.es#hasEvaluationItem
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#member> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://vocab.um.es#hasFeedbackDetail> .
+<https://vocab.um.es#hasFeedbackDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a customer feedback to the evaluation items that the feedback addresses."@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluation item"@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2004/02/skos/core#altLabel> "customer feedback evaluation"@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2004/02/skos/core#altLabel> "evaluation item linkage"@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2004/02/skos/core#altLabel> "feedback evaluation aspect"@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2004/02/skos/core#altLabel> "feedback item association"@en .
+<https://vocab.um.es#hasEvaluationItem> <http://www.w3.org/2004/02/skos/core#altLabel> "feedback rating item"@en .
+# 
+# https://vocab.um.es#hasFeedbackDetail
+# 
+# https://vocab.um.es#hasFlightClass
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#FlightClass> .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the flight ticket as evaluated by the customer."@en .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es#> .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2000/01/rdf-schema#label> "flight class" .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2004/02/skos/core#altLabel> "airline class" .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2004/02/skos/core#altLabel> "cabin class" .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2004/02/skos/core#altLabel> "service class" .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2004/02/skos/core#altLabel> "ticket class" .
+<https://vocab.um.es#hasFlightClass> <http://www.w3.org/2004/02/skos/core#altLabel> "travel class" .
+# 
+# https://vocab.um.es#hasTypeOfTravel
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.um.es#TypeOfTravel> .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a customer's feedback with the type of travel, such as business or personal."@en .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#> .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#label> "type of travel" .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2004/02/skos/core#altLabel> "journey type" .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2004/02/skos/core#altLabel> "travel category" .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2004/02/skos/core#altLabel> "travel classification" .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2004/02/skos/core#altLabel> "travel nature" .
+<https://vocab.um.es#hasTypeOfTravel> <http://www.w3.org/2004/02/skos/core#altLabel> "travel purpose" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.um.es#ArrivalDelay
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://vocab.um.es#hasAge
+<https://vocab.um.es#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the age of a customer in a customer feedback context."@en .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#hasAge> .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "Alter"@de .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "age"@en .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "edad"@es .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "età"@it .
+<https://vocab.um.es#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "âge"@fr .
+# 
+# https://vocab.um.es#hasClassValue
+<https://vocab.um.es#hasClassValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasClassValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#FlightClass> .
+<https://vocab.um.es#hasClassValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://vocab.um.es#hasClassValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific class of the flight ticket (e.g., Economy, Business, First)."@en .
+<https://vocab.um.es#hasClassValue> <http://www.w3.org/2000/01/rdf-schema#label> "has class value"@en .
+# 
+# https://vocab.um.es#hasCustomerType
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# https://vocab.um.es#hasFlightDistance
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the distance of a flight in miles in a customer feedback context."@en .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#hasFlightDistance> .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Flugdistanz"@de .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#label> "distance de vol"@fr .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#label> "distancia de vuelo"@es .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#label> "distanza di volo"@it .
+<https://vocab.um.es#hasFlightDistance> <http://www.w3.org/2000/01/rdf-schema#label> "flight distance"@en .
+# 
+# https://vocab.um.es#hasRating
+<https://vocab.um.es#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the rating given to an evaluation item in a customer feedback context."@en .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that holds the cleanliness rating value for an evaluation item."@en .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#hasRating> .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "Bewertung"@de .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "calificación"@es .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "notation"@fr .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@en .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "valutazione"@it .
+<https://vocab.um.es#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has cleanliness rating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#CustomerFeedback> .
+# 
+# https://vocab.um.es#ArrivalDelay
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#oneOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#ShortDelay> .
+<https://vocab.um.es#ShortDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#OnTime> .
+<https://vocab.um.es#OnTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#LongDelay> .
+<https://vocab.um.es#LongDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+# 
+# https://vocab.um.es#AverageCheckinService
+<https://vocab.um.es#AverageCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#CateringServiceRating
+<https://vocab.um.es#CateringServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CateringServiceRating> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#FoodAndDrink> .
+# 
+# https://vocab.um.es#CheckinService
+<https://vocab.um.es#CheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#PoorCheckinService> .
+<https://vocab.um.es#PoorCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#OutstandingCheckinService> .
+<https://vocab.um.es#OutstandingCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GoodCheckinService> .
+<https://vocab.um.es#GoodCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#ExcellentCheckinService> .
+<https://vocab.um.es#ExcellentCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#AverageCheckinService> .
+<https://vocab.um.es#AverageCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the check-in service experienced during their travel."@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/CheckinService> .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Airport Check-in Evaluation"@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-in Desk Rating"@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-in Experience Rating"@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-in Rating"@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Service at Check-in Counter"@en .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-in Service" .
+<https://vocab.um.es#CheckinService> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#Service> .
+# 
+# https://vocab.um.es#Cleanliness
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#oneOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#PoorCleanliness> .
+<https://vocab.um.es#PoorCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#OutstandingCleanliness> .
+<https://vocab.um.es#OutstandingCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GoodCleanliness> .
+<https://vocab.um.es#GoodCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#ExcellentCleanliness> .
+<https://vocab.um.es#ExcellentCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#AverageCleanliness> .
+<https://vocab.um.es#AverageCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the cleanliness of the airline services and facilities."@en .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Cleanliness> .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Cleanliness" .
+<https://vocab.um.es#Cleanliness> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#hasQuality> .
+# 
+# https://vocab.um.es#CustomerFeedback
+<https://vocab.um.es#CustomerFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CustomerFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://vocab.um.es#CustomerFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the feedback provided by a customer regarding their flight experience." .
+# 
+# https://vocab.um.es#CustomerGender
+<https://vocab.um.es#CustomerGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CustomerGender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#CustomerGender> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Gender"@en .
+# 
+# https://vocab.um.es#CustomerSatisfaction
+<https://vocab.um.es#CustomerSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#CustomerSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Satisfaction"@en .
+# 
+# https://vocab.um.es#CustomerServiceRating
+<https://vocab.um.es#CustomerServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CustomerServiceRating> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#OnlineSupport> .
+# 
+# https://vocab.um.es#CustomerType
+<https://vocab.um.es#CustomerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#CustomerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#CustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Type"@en .
+# 
+# https://vocab.um.es#Departure
+<https://vocab.um.es#Departure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#Departure> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#DepartureDelay> .
+<https://vocab.um.es#Departure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#Departure> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the evaluation of the departure delay experienced by a customer." .
+<https://vocab.um.es#Departure> <http://www.w3.org/2000/01/rdf-schema#label> "Departure Delay Evaluation" .
+<https://vocab.um.es#Departure> <http://www.w3.org/2004/02/skos/core#altLabel> "Departure Delay Rating" .
+<https://vocab.um.es#Departure> <http://www.w3.org/2004/02/skos/core#altLabel> "Departure Punctuality Assessment" .
+<https://vocab.um.es#Departure> <http://www.w3.org/2004/02/skos/core#altLabel> "Departure Time Rating" .
+<https://vocab.um.es#Departure> <http://www.w3.org/2004/02/skos/core#altLabel> "Departure Timeliness Feedback" .
+<https://vocab.um.es#Departure> <http://www.w3.org/2004/02/skos/core#altLabel> "Flight Departure Delay Evaluation" .
+# 
+# https://vocab.um.es#DepartureDelay
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#oneOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#ShortDepartureDelay> .
+<https://vocab.um.es#ShortDepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#MediumDepartureDelay> .
+<https://vocab.um.es#MediumDepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#LongDepartureDelay> .
+<https://vocab.um.es#LongDepartureDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the time delay in minutes for a customer's departure." .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/DepartureDelay> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Delay at Departure Gate" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Delay in Departure" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Departure Delay" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Departure Time Delay" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Departure Delay" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Takeoff Delay" .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/created> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/creator> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/description> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es/DepartureDelay#metadata> .
+<https://vocab.um.es#DepartureDelay> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# https://vocab.um.es#EvaluationItem
+<https://vocab.um.es#EvaluationItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#EvaluationItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#EvaluationItem> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation Item"@en .
+# 
+# https://vocab.um.es#ExcellentCheckinService
+<https://vocab.um.es#ExcellentCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#FlightClass
+<https://vocab.um.es#FlightClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#FlightClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#FlightClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class of the flight ticket which can be one of three unique values."@en .
+<https://vocab.um.es#FlightClass> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Class"@en .
+# 
+# https://vocab.um.es#FoodAndDrink
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for food and drink quality during the flight."@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#FoodAndDrink> .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Beverage Quality Rating"@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Catering Rating"@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Food and Drink Rating"@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Catering Rating"@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Meal Rating"@en .
+<https://vocab.um.es#FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Meal Quality Rating"@en .
+# 
+# https://vocab.um.es#GateLocation
+<https://vocab.um.es#GateLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#oneOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GateLocationRating5> .
+<https://vocab.um.es#GateLocationRating5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GateLocationRating4> .
+<https://vocab.um.es#GateLocationRating4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GateLocationRating3> .
+<https://vocab.um.es#GateLocationRating3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GateLocationRating2> .
+<https://vocab.um.es#GateLocationRating2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#GateLocationRating1> .
+<https://vocab.um.es#GateLocationRating1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A categorical rating representing a customer's satisfaction with the location of the gate at the airport." .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Gate Location" .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2004/02/skos/core#altLabel> "Airport Gate Position Rating" .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2004/02/skos/core#altLabel> "Boarding Gate Satisfaction Level" .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2004/02/skos/core#altLabel> "Customer Gate Location Feedback" .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2004/02/skos/core#altLabel> "Gate Proximity Rating" .
+<https://vocab.um.es#GateLocation> <http://www.w3.org/2004/02/skos/core#altLabel> "Rating for Boarding Gate Proximity" .
+# 
+# https://vocab.um.es#GoodCheckinService
+<https://vocab.um.es#GoodCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#InflightWifiService
+<https://vocab.um.es#InflightWifiService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#InflightWifiService> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#Wifi> .
+# 
+# https://vocab.um.es#LegRoomService
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#LegSpaceEvaluation> .
+<https://vocab.um.es#LegSpaceEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the leg room service provided during the flight."@en .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/LegRoomService> .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#label> "Leg Room Service" .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es#ComfortEvaluation> .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2004/02/skos/core#altLabel> "Leg Space Rating"@en .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2004/02/skos/core#altLabel> "Leg Space Service Evaluation"@en .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2004/02/skos/core#altLabel> "Legroom Comfort Rating"@en .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2004/02/skos/core#altLabel> "Passenger Leg Room Assessment"@en .
+<https://vocab.um.es#LegRoomService> <http://www.w3.org/2004/02/skos/core#altLabel> "Seat Leg Room Rating"@en .
+# 
+# https://vocab.um.es#LegSpaceEvaluation
+# 
+# https://vocab.um.es#OnlineBoarding
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2002/07/owl#equivalentClass> <https://vocab.um.es#WebCheckinService> .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the online boarding process of an airline."@en .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/OnlineBoarding> .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic Boarding Service" .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "Internet Boarding Process" .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "Online Boarding" .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Service Boarding" .
+<https://vocab.um.es#OnlineBoarding> <http://www.w3.org/2000/01/rdf-schema#label> "Web Check-in Service" .
+# 
+# https://vocab.um.es#OnlineBooking
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#oneOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#VerySatisfied> .
+<https://vocab.um.es#VerySatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#VeryDissatisfied> .
+<https://vocab.um.es#VeryDissatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Satisfied> .
+<https://vocab.um.es#Satisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Neutral> .
+<https://vocab.um.es#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Dissatisfied> .
+<https://vocab.um.es#Dissatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the ease of booking their flight online."@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/OnlineBooking> .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Booking"@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "E-Booking"@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic Booking"@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "Internet Booking"@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "Web Booking"@en .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#label> "Online Booking" .
+<https://vocab.um.es#OnlineBooking> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#OnlineBooking> .
+# 
+# https://vocab.um.es#OnlineSupport
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the online support services provided by the airline."@en .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/OnlineSupport> .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#label> "Online Support" .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/goodrelations/v1#AfterSalesService> .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2004/02/skos/core#altLabel> "Digital Support Evaluation"@en .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2004/02/skos/core#altLabel> "Internet Customer Support Rating"@en .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2004/02/skos/core#altLabel> "Online Helpdesk Feedback"@en .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2004/02/skos/core#altLabel> "Virtual Support Assessment"@en .
+<https://vocab.um.es#OnlineSupport> <http://www.w3.org/2004/02/skos/core#altLabel> "Web Support Rating"@en .
+# 
+# https://vocab.um.es#OutstandingCheckinService
+<https://vocab.um.es#OutstandingCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#PoorCheckinService
+<https://vocab.um.es#PoorCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#SeatComfort
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#oneOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#VeryUncomfortable> .
+<https://vocab.um.es#VeryUncomfortable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#VeryComfortable> .
+<https://vocab.um.es#VeryComfortable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Uncomfortable> .
+<https://vocab.um.es#Uncomfortable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Neutral> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://vocab.um.es#Comfortable> .
+<https://vocab.um.es#Comfortable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the comfort of their seat during the flight."@en .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/SeatComfort> .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Comfort" .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2004/02/skos/core#altLabel> "Chair Comfort"@en .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2004/02/skos/core#altLabel> "Comfort Level"@en .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2004/02/skos/core#altLabel> "Comfort Rating"@en .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2004/02/skos/core#altLabel> "Seat Rating"@en .
+<https://vocab.um.es#SeatComfort> <http://www.w3.org/2004/02/skos/core#altLabel> "Seating Comfort"@en .
+# 
+# https://vocab.um.es#TypeOfTravel
+<https://vocab.um.es#TypeOfTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#TypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#CustomerFeedback> .
+<https://vocab.um.es#TypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#label> "Type of Travel"@en .
+# 
+# https://vocab.um.es#WebCheckinService
+<https://vocab.um.es#WebCheckinService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.um.es#Wifi
+<https://vocab.um.es#Wifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://vocab.um.es#EvaluationItem> .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the customer's rating for the inflight wifi service provided during the flight."@en .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/Wifi> .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft Internet Service" .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Wifi Service" .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "Onboard Wifi Service" .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi Service" .
+<https://vocab.um.es#Wifi> <http://www.w3.org/2000/01/rdf-schema#label> "Wireless Internet on Plane" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://vocab.um.es#AverageCheckinService
+# 
+# https://vocab.um.es#AverageCleanliness
+<https://vocab.um.es#AverageCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#AverageCleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "A moderate rating for cleanliness, indicating neither satisfaction nor significant dissatisfaction."@en .
+<https://vocab.um.es#AverageCleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Average Cleanliness" .
+# 
+# https://vocab.um.es#Comfortable
+# 
+# https://vocab.um.es#Dissatisfied
+# 
+# https://vocab.um.es#ExcellentCheckinService
+# 
+# https://vocab.um.es#ExcellentCleanliness
+<https://vocab.um.es#ExcellentCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#ExcellentCleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "A high rating for cleanliness, indicating above-average satisfaction."@en .
+<https://vocab.um.es#ExcellentCleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Excellent Cleanliness" .
+# 
+# https://vocab.um.es#GateLocationRating1
+# 
+# https://vocab.um.es#GateLocationRating2
+# 
+# https://vocab.um.es#GateLocationRating3
+# 
+# https://vocab.um.es#GateLocationRating4
+# 
+# https://vocab.um.es#GateLocationRating5
+# 
+# https://vocab.um.es#GoodCheckinService
+# 
+# https://vocab.um.es#GoodCleanliness
+<https://vocab.um.es#GoodCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#GoodCleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating for cleanliness that indicates general satisfaction."@en .
+<https://vocab.um.es#GoodCleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Good Cleanliness" .
+# 
+# https://vocab.um.es#LongDelay
+# 
+# https://vocab.um.es#LongDepartureDelay
+# 
+# https://vocab.um.es#MediumDepartureDelay
+# 
+# https://vocab.um.es#Neutral
+# 
+# https://vocab.um.es#OnTime
+# 
+# https://vocab.um.es#OutstandingCheckinService
+# 
+# https://vocab.um.es#OutstandingCleanliness
+<https://vocab.um.es#OutstandingCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#OutstandingCleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "The highest rating for cleanliness, indicating exceptional satisfaction."@en .
+<https://vocab.um.es#OutstandingCleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Outstanding Cleanliness" .
+# 
+# https://vocab.um.es#PoorCheckinService
+# 
+# https://vocab.um.es#PoorCleanliness
+<https://vocab.um.es#PoorCleanliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocab.um.es#Cleanliness> .
+<https://vocab.um.es#PoorCleanliness> <http://www.w3.org/2000/01/rdf-schema#comment> "The lowest rating for cleanliness, indicating significant dissatisfaction."@en .
+<https://vocab.um.es#PoorCleanliness> <http://www.w3.org/2000/01/rdf-schema#label> "Poor Cleanliness" .
+# 
+# https://vocab.um.es#Satisfied
+# 
+# https://vocab.um.es#ShortDelay
+# 
+# https://vocab.um.es#ShortDepartureDelay
+# 
+# https://vocab.um.es#Uncomfortable
+# 
+# https://vocab.um.es#VeryComfortable
+# 
+# https://vocab.um.es#VeryDissatisfied
+# 
+# https://vocab.um.es#VerySatisfied
+# 
+# https://vocab.um.es#VeryUncomfortable
+# 
+_:genid40 <http://www.w3.org/2000/01/rdf-schema#label> "Rating range restriction"@en .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the time delay in minutes for a customer's arrival." .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ArrivalDelay> .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Arrival Delay" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Arrival Time Delay" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Delay in Arrival" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Arrival Lateness" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Lateness in Arrival" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#label> "Postponement of Arrival" .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://vocab.um.es/ArrivalDelay#metadata> .
+<https://vocab.um.es#ArrivalDelay> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+<https://vocab.um.es#AverageCheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of 2 or 3 out of 5 for check-in service, indicating moderate satisfaction."@en .
+<https://vocab.um.es#AverageCheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Average Check-in Service" .
+# 
+<https://vocab.um.es#ExcellentCheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of 5 out of 5 for check-in service, indicating very high satisfaction."@en .
+<https://vocab.um.es#ExcellentCheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Excellent Check-in Service" .
+# 
+<https://vocab.um.es#GoodCheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of 4 out of 5 for check-in service, indicating high satisfaction."@en .
+<https://vocab.um.es#GoodCheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Good Check-in Service" .
+# 
+<https://vocab.um.es#OutstandingCheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of 5 out of 5 for check-in service, indicating the highest level of satisfaction."@en .
+<https://vocab.um.es#OutstandingCheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Outstanding Check-in Service" .
+# 
+<https://vocab.um.es#PoorCheckinService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of 1 out of 5 for check-in service, indicating very low satisfaction."@en .
+<https://vocab.um.es#PoorCheckinService> <http://www.w3.org/2000/01/rdf-schema#label> "Poor Check-in Service" .
+# 
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the type of customer in a customer feedback context."@en .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.um.es/ontology#hasCustomerType> .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "Kundentyp"@de .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "customer type"@en .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de cliente"@es .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo di cliente"@it .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#label> "type de client"@fr .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://example.com/contextual-information-about-customer-types> .
+<https://vocab.um.es#hasCustomerType> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

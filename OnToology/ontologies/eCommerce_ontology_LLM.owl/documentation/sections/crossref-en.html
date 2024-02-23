@@ -1,0 +1,937 @@
+<h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">
+            <span>Billing Document</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">
+            <span>Buyer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#Product" title="https://vocab.um.es#Product">
+            <span>Commodity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Country" title="http://schema.org/Country">
+            <span>country</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Customer" title="http://schema.org/Customer">
+            <span>customer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">
+            <span>Inventory Item</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">
+            <span>Nation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Product" title="http://schema.org/Product">
+            <span>product</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#UnitPriceSpecification" title="https://vocab.um.es#UnitPriceSpecification">
+            <span>Unit Price Specification</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#Invoice">
+      <h3>Billing Document<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Invoice</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#country" title="https://vocab.um.es#country">country of invoice</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://vocab.um.es#customer" title="https://vocab.um.es#customer">customer</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://vocab.um.es#hasSalesArticle" title="https://vocab.um.es#hasSalesArticle">has sales article</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://vocab.um.es#InvoiceDate" title="https://vocab.um.es#InvoiceDate">invoice date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="http://schema.org/Invoice"
+               target="_blank"
+               title="http://schema.org/Invoice">invoice</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#Customer">
+      <h3>Buyer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Customer</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://schema.org/Person"
+               target="_blank"
+               title="http://schema.org/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#CustomerID" title="https://vocab.um.es#CustomerID">Buyer ID</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#customer" title="https://vocab.um.es#customer">customer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="http://schema.org/Person"
+               target="_blank"
+               title="http://schema.org/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#Product">
+      <h3>Commodity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Product</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#product" title="https://vocab.um.es#product">product</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="#http://schema.org/Product" title="http://schema.org/Product">product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Country">
+      <h3>country<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Country</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">Nation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">Nation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">Nation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#http://schema.org/Country">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Customer">
+      <h3>customer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Customer</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">Buyer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#SalesArticle">
+      <h3>Inventory Item<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#SalesArticle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Product" title="http://schema.org/Product">product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Product" title="https://vocab.um.es#Product">Commodity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Description" title="https://vocab.um.es#Description">Article Description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://vocab.um.es#Quantity" title="https://vocab.um.es#Quantity">Quantity</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://vocab.um.es#product" title="https://vocab.um.es#product">product</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#hasSalesArticle" title="https://vocab.um.es#hasSalesArticle">has sales article</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="#http://schema.org/Product" title="http://schema.org/Product">product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#Country">
+      <h3>Nation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Country</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Country" title="http://schema.org/Country">country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#country" title="https://vocab.um.es#country">country of invoice</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="#http://schema.org/Country" title="http://schema.org/Country">country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Product">
+      <h3>product<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Product</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Product" title="https://vocab.um.es#Product">Commodity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#http://schema.org/Product">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://vocab.um.es#UnitPriceSpecification">
+      <h3>Unit Price Specification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#UnitPriceSpecification</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://schema.org/PriceSpecification"
+               target="_blank"
+               title="http://schema.org/PriceSpecification">price specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://vocab.um.es#InvoicePrice" title="https://vocab.um.es#InvoicePrice">Billing Amount</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://vocab.um.es#PriceType" title="https://vocab.um.es#PriceType">Price Type</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <a href="http://schema.org/UnitPriceSpecification"
+               target="_blank"
+               title="http://schema.org/UnitPriceSpecification">unit price specification</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual, named individual</dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#InvoicePrice" title="https://vocab.um.es#InvoicePrice">
+            <span>Billing Amount</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#country" title="https://vocab.um.es#country">country of invoice</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#customer" title="https://vocab.um.es#customer">customer</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#hasSalesArticle" title="https://vocab.um.es#hasSalesArticle">has sales article</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#product" title="https://vocab.um.es#product">product</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#InvoicePrice">
+      <h3>Billing Amount<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#InvoicePrice</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#UnitPriceSpecification" title="https://vocab.um.es#UnitPriceSpecification">Unit Price Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/price"
+                  target="_blank"
+                  title="http://schema.org/price">price</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://vocab.um.es#InvoicePrice">data property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#country">
+      <h3>country of invoice<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#country</p>
+      <div class="comment">
+         <span class="markdown">Relates an invoice to the country where it was issued.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">Billing Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">Nation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#customer">
+      <h3>customer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#customer</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es/customer">https://vocab.um.es/customer</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">Billing Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">Buyer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#hasSalesArticle">
+      <h3>has sales article<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#hasSalesArticle</p>
+      <div class="comment">
+         <span class="markdown">Relates an invoice to the sales article included in it.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">An object property that associates an Invoice with its corresponding SalesArticle.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es/ontology#">https://vocab.um.es/ontology#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">Billing Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#product">
+      <h3>product<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#product</p>
+      <div class="comment">
+         <span class="markdown">Relates a sales article to its more specific product classification.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Product" title="https://vocab.um.es#Product">Commodity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://vocab.um.es#Description" title="https://vocab.um.es#Description">
+            <span>Article Description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#InvoicePrice" title="https://vocab.um.es#InvoicePrice">
+            <span>Billing Amount</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#CustomerID" title="https://vocab.um.es#CustomerID">
+            <span>Buyer ID</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#InvoiceDate" title="https://vocab.um.es#InvoiceDate">
+            <span>invoice date</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#PriceType" title="https://vocab.um.es#PriceType">Price Type</a>
+      </li>
+      <li>
+         <a href="#https://vocab.um.es#Quantity" title="https://vocab.um.es#Quantity">
+            <span>Quantity</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://vocab.um.es#Description">
+      <h3>Article Description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Description</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/Description"
+                  target="_blank"
+                  title="http://schema.org/Description">description</a>, <a href="http://schema.org/description"
+                  target="_blank"
+                  title="http://schema.org/description">description</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual, named individual, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#InvoicePrice">
+      <h3>Billing Amount<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#InvoicePrice</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#decimal"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/price"
+                  target="_blank"
+                  title="http://schema.org/price">price</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://vocab.um.es#InvoicePrice">object property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#CustomerID">
+      <h3>Buyer ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#CustomerID</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">Buyer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/Person"
+                  target="_blank"
+                  title="http://schema.org/Person">person</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#InvoiceDate">
+      <h3>invoice date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#InvoiceDate</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://schema.org/dateIssued"
+                  target="_blank"
+                  title="http://schema.org/dateIssued">date issued</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">Billing Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/DateTime"
+                  target="_blank"
+                  title="http://schema.org/DateTime">date time</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#PriceType">
+      <h3>Price Type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#PriceType</p>
+      <div class="comment">
+         <span class="markdown">The type of price specification, such as 'Retail', 'Wholesale', or 'Discounted'.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>This property was introduced in version 1.0 of the ontology and is aligned with schema.org's priceType property.</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://vocab.um.es#">https://vocab.um.es#</a>
+         </dd>
+         <dd>
+            <a href="https://vocab.um.es/UnitPriceSpecification#PriceType">https://vocab.um.es/UnitPriceSpecification#PriceType</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://schema.org/additionalType"
+                  target="_blank"
+                  title="http://schema.org/additionalType">additional type</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#UnitPriceSpecification" title="https://vocab.um.es#UnitPriceSpecification">Unit Price Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://vocab.um.es#Quantity">
+      <h3>Quantity<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://vocab.um.es#Quantity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+            <dt>is same as</dt>
+            <dd>
+               <a href="http://schema.org/QuantitativeValue"
+                  target="_blank"
+                  title="http://schema.org/QuantitativeValue">quantitative value</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual, named individual</dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://schema.org/Country" title="http://schema.org/Country">
+            <span>country</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/DateTime" title="http://schema.org/DateTime">
+            <span>date time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Description" title="http://schema.org/Description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/description" title="http://schema.org/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Invoice" title="http://schema.org/Invoice">
+            <span>invoice</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Person" title="http://schema.org/Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/price" title="http://schema.org/price">
+            <span>price</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Product" title="http://schema.org/Product">
+            <span>product</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/QuantitativeValue" title="http://schema.org/QuantitativeValue">
+            <span>quantitative value</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/UnitPriceSpecification" title="http://schema.org/UnitPriceSpecification">
+            <span>unit price specification</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://schema.org/Country">
+      <h3>country<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Country</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Country" title="https://vocab.um.es#Country">Nation</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#http://schema.org/Country">class</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/DateTime">
+      <h3>date time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/DateTime</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#InvoiceDate" title="https://vocab.um.es#InvoiceDate">invoice date</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Description">
+      <h3>description<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Description</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Description" title="https://vocab.um.es#Description">Article Description</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/description">
+      <h3>description<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/description</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Description" title="https://vocab.um.es#Description">Article Description</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Invoice">
+      <h3>invoice<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Invoice</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Invoice" title="https://vocab.um.es#Invoice">Billing Document</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Person">
+      <h3>person<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Person</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Customer" title="https://vocab.um.es#Customer">Buyer</a>, <a href="#https://vocab.um.es#CustomerID" title="https://vocab.um.es#CustomerID">Buyer ID</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>class</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/price">
+      <h3>price<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/price</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#InvoicePrice" title="https://vocab.um.es#InvoicePrice">Billing Amount</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Product">
+      <h3>product<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Product</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Product" title="https://vocab.um.es#Product">Commodity</a>, <a href="#https://vocab.um.es#SalesArticle" title="https://vocab.um.es#SalesArticle">Inventory Item</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#http://schema.org/Product">class</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/QuantitativeValue">
+      <h3>quantitative value<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/QuantitativeValue</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#Quantity" title="https://vocab.um.es#Quantity">Quantity</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/UnitPriceSpecification">
+      <h3>unit price specification<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/UnitPriceSpecification</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="#https://vocab.um.es#UnitPriceSpecification" title="https://vocab.um.es#UnitPriceSpecification">Unit Price Specification</a>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="rules">
+   <h3 class="list" id="rule">Rules</h3>
+   <ul class="hlist"/>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

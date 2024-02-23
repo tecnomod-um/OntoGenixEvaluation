@@ -1,0 +1,15 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "-61b8251c:18dd5e6b051:-7ffc" "https://vocab.um.es#SubProduct" "https://vocab.um.es#Product" "https://vocab.um.es#State" "https://vocab.um.es#CompanyResponse" "https://vocab.um.es#CustomerComplaint" "https://vocab.um.es#ProblemOfComplaint" "https://vocab.um.es#responseProvidedByCompany" "https://vocab.um.es#Resolution" "https://vocab.um.es#ProblemSubCategory" ; /*classes style*/
+	"https://vocab.um.es#ProblemSubCategory" -> "https://vocab.um.es#ProblemOfComplaint" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#State" -> "-61b8251c:18dd5e6b051:-7ffc" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#Product" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#ProblemOfComplaint" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#SubProduct" -> "https://vocab.um.es#Product" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#Resolution" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#CompanyResponse" -> "https://vocab.um.es#Resolution" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#CustomerComplaint" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://vocab.um.es#responseProvidedByCompany" -> "https://vocab.um.es#CompanyResponse" [ label = "rdfs:subClassOf" ];
+
+}

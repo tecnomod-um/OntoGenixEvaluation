@@ -1,0 +1,460 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://vocab.um.es#InvoicePrice
+<https://vocab.um.es#InvoicePrice> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <https://vocab.um.es#UnitPriceSpecification> .
+
+
+###  https://vocab.um.es#country
+<https://vocab.um.es#country> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://vocab.um.es#Invoice> ;
+                              rdfs:range <https://vocab.um.es#Country> ;
+                              owl:propertyDisjointWith <https://vocab.um.es#customer> ,
+                                                       <https://vocab.um.es#hasSalesArticle> ;
+                              rdfs:comment "Relates an invoice to the country where it was issued."@en ;
+                              rdfs:label "country of invoice" .
+
+
+###  https://vocab.um.es#customer
+<https://vocab.um.es#customer> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <https://vocab.um.es#Invoice> ;
+                               rdfs:range <https://vocab.um.es#Customer> ;
+                               rdfs:isDefinedBy <https://vocab.um.es/customer> ;
+                               rdfs:label "customer" .
+
+
+###  https://vocab.um.es#hasSalesArticle
+<https://vocab.um.es#hasSalesArticle> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://vocab.um.es#Invoice> ;
+                                      rdfs:range <https://vocab.um.es#SalesArticle> ;
+                                      rdfs:comment "Relates an invoice to the sales article included in it."@en ;
+                                      rdfs:isDefinedBy <https://vocab.um.es/ontology#> ;
+                                      rdfs:label "has sales article"@en ;
+                                      rdfs:seeAlso <http://schema.org/Product> ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "article included"@en ,
+                                                                                     "contains article"@en ,
+                                                                                     "contains product"@en ,
+                                                                                     "has item"@en ,
+                                                                                     "includes item"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An object property that associates an Invoice with its corresponding SalesArticle."@en .
+
+
+###  https://vocab.um.es#product
+<https://vocab.um.es#product> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://vocab.um.es#SalesArticle> ;
+                              rdfs:range <https://vocab.um.es#Product> ;
+                              rdfs:comment "Relates a sales article to its more specific product classification."@en ;
+                              rdfs:label "product" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/additionalType
+<http://schema.org/additionalType> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/dateIssued
+<http://schema.org/dateIssued> rdf:type owl:DatatypeProperty .
+
+
+###  https://vocab.um.es#CustomerID
+<https://vocab.um.es#CustomerID> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <https://vocab.um.es#Customer> ;
+                                 rdfs:range xsd:integer .
+
+
+###  https://vocab.um.es#Description
+<https://vocab.um.es#Description> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <https://vocab.um.es#SalesArticle> ;
+                                  rdfs:range xsd:string .
+
+
+###  https://vocab.um.es#InvoiceDate
+<https://vocab.um.es#InvoiceDate> rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf <http://schema.org/dateIssued> ;
+                                  rdfs:domain <https://vocab.um.es#Invoice> ;
+                                  rdfs:range xsd:string .
+
+
+###  https://vocab.um.es#InvoicePrice
+<https://vocab.um.es#InvoicePrice> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range xsd:decimal .
+
+
+###  https://vocab.um.es#PriceType
+<https://vocab.um.es#PriceType> rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf <http://schema.org/additionalType> ;
+                                rdfs:domain <https://vocab.um.es#UnitPriceSpecification> ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "The type of price specification, such as 'Retail', 'Wholesale', or 'Discounted'."@en ;
+                                rdfs:isDefinedBy <https://vocab.um.es#> ,
+                                                 <https://vocab.um.es/UnitPriceSpecification#PriceType> ;
+                                rdfs:label "Preistyp"@de ,
+                                           "Price Type"@en ,
+                                           "Tipo de Precio"@es ,
+                                           "Tipo di Prezzo"@it ,
+                                           "Type de Prix"@fr ;
+                                rdfs:seeAlso <http://purl.org/goodrelations/v1#PriceSpecification> ,
+                                             <https://schema.org/priceType> ;
+                                owl:versionInfo "This property was introduced in version 1.0 of the ontology and is aligned with schema.org's priceType property."@en ,
+                                                "1.0" .
+
+
+###  https://vocab.um.es#Quantity
+<https://vocab.um.es#Quantity> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <https://vocab.um.es#SalesArticle> ;
+                               rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Country
+<http://schema.org/Country> rdf:type owl:Class ;
+                            owl:equivalentClass <https://vocab.um.es#Country> .
+
+
+###  http://schema.org/Customer
+<http://schema.org/Customer> rdf:type owl:Class ;
+                             owl:equivalentClass <https://vocab.um.es#Customer> .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class .
+
+
+###  http://schema.org/PriceSpecification
+<http://schema.org/PriceSpecification> rdf:type owl:Class .
+
+
+###  http://schema.org/Product
+<http://schema.org/Product> rdf:type owl:Class ;
+                            owl:equivalentClass <https://vocab.um.es#SalesArticle> .
+
+
+###  https://vocab.um.es#Country
+<https://vocab.um.es#Country> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://schema.org/Country> .
+
+
+###  https://vocab.um.es#Customer
+<https://vocab.um.es#Customer> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://schema.org/Person> .
+
+
+###  https://vocab.um.es#Invoice
+<https://vocab.um.es#Invoice> rdf:type owl:Class ;
+                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://vocab.um.es#country> ;
+                                                owl:allValuesFrom <https://vocab.um.es#Country>
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://vocab.um.es#customer> ;
+                                                owl:allValuesFrom <https://vocab.um.es#Customer>
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://vocab.um.es#hasSalesArticle> ;
+                                                owl:allValuesFrom <https://vocab.um.es#SalesArticle>
+                                              ] .
+
+
+###  https://vocab.um.es#Product
+<https://vocab.um.es#Product> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://vocab.um.es#SalesArticle> .
+
+
+###  https://vocab.um.es#SalesArticle
+<https://vocab.um.es#SalesArticle> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://schema.org/Product> .
+
+
+###  https://vocab.um.es#UnitPriceSpecification
+<https://vocab.um.es#UnitPriceSpecification> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://schema.org/PriceSpecification> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://schema.org/Country
+<http://schema.org/Country> rdf:type owl:NamedIndividual ;
+                            owl:sameAs <https://vocab.um.es#Country> .
+
+
+###  https://vocab.um.es#Country
+<https://vocab.um.es#Country> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/DateTime
+<http://schema.org/DateTime> rdf:type owl:NamedIndividual ;
+                             owl:sameAs <https://vocab.um.es#InvoiceDate> .
+
+
+###  https://vocab.um.es#InvoiceDate
+<https://vocab.um.es#InvoiceDate> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/Description
+<http://schema.org/Description> rdf:type owl:NamedIndividual ;
+                                owl:sameAs <https://vocab.um.es#Description> .
+
+
+###  https://vocab.um.es#Description
+<https://vocab.um.es#Description> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/Invoice
+<http://schema.org/Invoice> rdf:type owl:NamedIndividual ;
+                            owl:sameAs <https://vocab.um.es#Invoice> .
+
+
+###  https://vocab.um.es#Invoice
+<https://vocab.um.es#Invoice> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:NamedIndividual ;
+                           owl:sameAs <https://vocab.um.es#Customer> ,
+                                      <https://vocab.um.es#CustomerID> .
+
+
+###  https://vocab.um.es#Customer
+<https://vocab.um.es#Customer> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#CustomerID
+<https://vocab.um.es#CustomerID> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/Product
+<http://schema.org/Product> rdf:type owl:NamedIndividual ;
+                            owl:sameAs <https://vocab.um.es#Product> ,
+                                       <https://vocab.um.es#SalesArticle> .
+
+
+###  https://vocab.um.es#Product
+<https://vocab.um.es#Product> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#SalesArticle
+<https://vocab.um.es#SalesArticle> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/QuantitativeValue
+<http://schema.org/QuantitativeValue> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs <https://vocab.um.es#Quantity> .
+
+
+###  https://vocab.um.es#Quantity
+<https://vocab.um.es#Quantity> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/UnitPriceSpecification
+<http://schema.org/UnitPriceSpecification> rdf:type owl:NamedIndividual ;
+                                           owl:sameAs <https://vocab.um.es#UnitPriceSpecification> .
+
+
+###  https://vocab.um.es#UnitPriceSpecification
+<https://vocab.um.es#UnitPriceSpecification> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:NamedIndividual ;
+                                owl:sameAs <https://vocab.um.es#Description> .
+
+
+###  https://vocab.um.es#Description
+<https://vocab.um.es#Description> rdf:type owl:NamedIndividual .
+
+
+###  http://schema.org/price
+<http://schema.org/price> rdf:type owl:NamedIndividual ;
+                          owl:sameAs <https://vocab.um.es#InvoicePrice> .
+
+
+###  https://vocab.um.es#InvoicePrice
+<https://vocab.um.es#InvoicePrice> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Country
+<https://vocab.um.es#Country> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Customer
+<https://vocab.um.es#Customer> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#CustomerID
+<https://vocab.um.es#CustomerID> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Description
+<https://vocab.um.es#Description> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Invoice
+<https://vocab.um.es#Invoice> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#InvoiceDate
+<https://vocab.um.es#InvoiceDate> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Product
+<https://vocab.um.es#Product> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#Quantity
+<https://vocab.um.es#Quantity> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#SalesArticle
+<https://vocab.um.es#SalesArticle> rdf:type owl:NamedIndividual .
+
+
+###  https://vocab.um.es#UnitPriceSpecification
+<https://vocab.um.es#UnitPriceSpecification> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://vocab.um.es#Country> <http://purl.org/dc/elements/1.1/description> "This entity represents a country in the context of an invoice issuance location."@en ;
+                              rdfs:comment "A country where the invoice was issued." ;
+                              rdfs:isDefinedBy <https://vocab.um.es#> ;
+                              rdfs:label "Land"@de ,
+                                         "Nation"@en ,
+                                         "Pays"@fr ,
+                                         "País"@es ,
+                                         "国家"@zh ,
+                                         "Country" ;
+                              rdfs:seeAlso <http://dbpedia.org/resource/Country> .
+
+
+<https://vocab.um.es#Customer> rdfs:comment "An individual or organization that purchases goods or services" ;
+                               rdfs:isDefinedBy <https://vocab.um.es/Customer> ;
+                               rdfs:label "Buyer" ,
+                                          "Client" ,
+                                          "Consumer" ,
+                                          "Customer" ,
+                                          "Patron" .
+
+
+<https://vocab.um.es#CustomerID> rdfs:comment "A unique identifier for the customer" ;
+                                 rdfs:isDefinedBy <https://vocab.um.es/CustomerID> ;
+                                 rdfs:label "Buyer ID" ,
+                                            "Client Identifier" ,
+                                            "Consumer ID" ,
+                                            "Customer ID" ,
+                                            "Patron Identifier" .
+
+
+<https://vocab.um.es#Description> rdfs:comment "A textual description of the sales article or product."@en ;
+                                  rdfs:isDefinedBy <https://vocab.um.es/Description> ;
+                                  rdfs:label "Article Description" ,
+                                             "Description" ,
+                                             "Invoice Item Description" ,
+                                             "Product Description" ,
+                                             "Sales Article Text" ;
+                                  rdfs:seeAlso <http://schema.org/Product> .
+
+
+<https://vocab.um.es#Invoice> rdfs:comment "A financial document issued by a seller to a buyer, relating to a sale transaction and indicating the products, quantities, and agreed prices." ;
+                              rdfs:label "Billing Document"@en ,
+                                         "Payment Request"@en ,
+                                         "Purchase Invoice"@en ,
+                                         "Sales Invoice"@en ,
+                                         "Transaction Record"@en ,
+                                         "Invoice" ;
+                              rdfs:seeAlso <https://en.wikipedia.org/wiki/Invoice> .
+
+
+<https://vocab.um.es#InvoiceDate> rdfs:comment "The date when the invoice was issued." ;
+                                  rdfs:label "invoice date" .
+
+
+<https://vocab.um.es#InvoicePrice> rdfs:comment "The price specification related to an invoice, detailing the total cost as per unit price." ;
+                                   rdfs:isDefinedBy <https://vocab.um.es/InvoicePrice> ;
+                                   rdfs:label "Billing Amount" ,
+                                              "Invoice Amount" ,
+                                              "Invoice Cost" ,
+                                              "Invoice Price" ,
+                                              "Price of Invoice" .
+
+
+<https://vocab.um.es#Product> <http://purl.org/dc/elements/1.1/description> "A product represents any item that can be offered to a market to satisfy the desire or need of a customer."@en ;
+                              rdfs:comment "A product is an individual item for sale that is a subclass of SalesArticle."@en ;
+                              rdfs:isDefinedBy <https://vocab.um.es/Product> ;
+                              rdfs:label "Commodity" ,
+                                         "Goods" ,
+                                         "Item" ,
+                                         "Merchandise" ,
+                                         "Product" .
+
+
+<https://vocab.um.es#Quantity> rdfs:comment "The quantity of the sales article in the invoice."@en ;
+                               rdfs:isDefinedBy <https://vocab.um.es/Quantity> ;
+                               rdfs:label "Quantity"@en ;
+                               rdfs:seeAlso <http://schema.org/QuantitativeValue> ;
+                               <http://www.w3.org/2004/02/skos/core#altLabel> "Amount"@en ,
+                                                                              "ItemCount"@en ,
+                                                                              "Number of Items"@en ,
+                                                                              "TotalQuantity"@en ,
+                                                                              "Volume"@en .
+
+
+<https://vocab.um.es#SalesArticle> rdfs:comment "A unique item of sale represented in an invoice." ;
+                                   rdfs:isDefinedBy <https://vocab.um.es/SalesArticle> ;
+                                   rdfs:label "Inventory Item" ,
+                                              "Product Item" ,
+                                              "SKU" ,
+                                              "Sales Article" ,
+                                              "Stock Item" ;
+                                   rdfs:seeAlso <http://example.org/externalResourceAboutSalesArticle> .
+
+
+<https://vocab.um.es#UnitPriceSpecification> rdfs:comment "A specification that defines the price per unit of a given product or service."@en ;
+                                             rdfs:isDefinedBy <https://vocab.um.es/UnitPriceSpecification> ;
+                                             rdfs:label "Especificación del Precio Unitario"@es ,
+                                                        "Specifica del Prezzo Unitario"@it ,
+                                                        "Spezifikation des Einheitspreises"@de ,
+                                                        "Spécification du Prix Unitaire"@fr ,
+                                                        "Unit Price Specification"@en ;
+                                             rdfs:seeAlso <http://purl.org/goodrelations/v1#UnitPriceSpecification> ,
+                                                          <https://www.wikidata.org/wiki/Q18534542> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

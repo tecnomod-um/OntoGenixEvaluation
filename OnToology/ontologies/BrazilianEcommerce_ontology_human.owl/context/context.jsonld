@@ -1,0 +1,191 @@
+{
+  "@context" : {
+    "hasPurchaseDate" : {
+      "@id" : "https://vocab.um.es#hasPurchaseDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "orderedBy" : {
+      "@id" : "https://vocab.um.es#orderedBy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Order" : {
+      "@id" : "https://vocab.um.es#Order"
+    },
+    "hasLength" : {
+      "@id" : "https://vocab.um.es#hasLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SalesArticle" : {
+      "@id" : "https://purl.org/ontologies/MT/SalesArticle"
+    },
+    "hasCommentMessage" : {
+      "@id" : "https://vocab.um.es#hasCommentMessage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasZipCodePrefix" : {
+      "@id" : "https://vocab.um.es#hasZipCodePrefix",
+      "@type" : "@id"
+    },
+    "hasPhotosQuantity" : {
+      "@id" : "https://vocab.um.es#hasPhotosQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Product" : {
+      "@id" : "https://schema.org/Product"
+    },
+    "hasDeliveredCustomerDate" : {
+      "@id" : "https://vocab.um.es#hasDeliveredCustomerDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Customer" : {
+      "@id" : "https://vocab.um.es#Customer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Seller" : {
+      "@id" : "https://vocab.um.es#Seller"
+    },
+    "hasPaymentValue" : {
+      "@id" : "https://vocab.um.es#hasPaymentValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasFreightValue" : {
+      "@id" : "https://vocab.um.es#hasFreightValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasCommentTitle" : {
+      "@id" : "https://vocab.um.es#hasCommentTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCustomerRef" : {
+      "@id" : "https://vocab.um.es#hasCustomerRef",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasReview" : {
+      "@id" : "https://vocab.um.es#hasReview",
+      "@type" : "@id"
+    },
+    "ZipCodePrefix" : {
+      "@id" : "https://vocab.um.es#ZipCodePrefix"
+    },
+    "hasOrderPayment" : {
+      "@id" : "https://vocab.um.es#hasOrderPayment",
+      "@type" : "@id"
+    },
+    "hasEstimatedDeliveryDate" : {
+      "@id" : "https://vocab.um.es#hasEstimatedDeliveryDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasNameLength" : {
+      "@id" : "https://vocab.um.es#hasNameLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasPaymentInstallments" : {
+      "@id" : "https://vocab.um.es#hasPaymentInstallments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasProduct" : {
+      "@id" : "https://vocab.um.es#hasProduct",
+      "@type" : "@id"
+    },
+    "OrderPayment" : {
+      "@id" : "https://purl.org/ontologies/MT/OrderPayment"
+    },
+    "hasStatus" : {
+      "@id" : "https://vocab.um.es#hasStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSeller" : {
+      "@id" : "https://vocab.um.es#hasSeller",
+      "@type" : "@id"
+    },
+    "hasWidth" : {
+      "@id" : "https://vocab.um.es#hasWidth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasHeight" : {
+      "@id" : "https://vocab.um.es#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "belongsToOrder" : {
+      "@id" : "https://vocab.um.es#belongsToOrder",
+      "@type" : "@id"
+    },
+    "hasReviewScore" : {
+      "@id" : "https://vocab.um.es#hasReviewScore",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ThasSalesArticle" : {
+      "@id" : "https://purl.org/ThasSalesArticle",
+      "@type" : "@id"
+    },
+    "hasDescriptionLength" : {
+      "@id" : "https://vocab.um.es#hasDescriptionLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasApprovedDate" : {
+      "@id" : "https://vocab.um.es#hasApprovedDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasCity" : {
+      "@id" : "https://vocab.um.es#hasCity",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasCreationDate" : {
+      "@id" : "https://vocab.um.es#hasCreationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasState" : {
+      "@id" : "https://vocab.um.es#hasState",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "https://vocab.um.es#City"
+    },
+    "State" : {
+      "@id" : "https://vocab.um.es#State"
+    },
+    "category" : {
+      "@id" : "https://schema.org/category",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDeliveredCarrierDate" : {
+      "@id" : "https://vocab.um.es#hasDeliveredCarrierDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "price" : {
+      "@id" : "https://schema.org/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasDbXref" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+    },
+    "hasWeight" : {
+      "@id" : "https://vocab.um.es#hasWeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasGeolocation" : {
+      "@id" : "https://vocab.um.es#hasGeolocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrderReview" : {
+      "@id" : "https://vocab.um.es#OrderReview"
+    },
+    "hasPaymentType" : {
+      "@id" : "https://vocab.um.es#hasPaymentType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAnswerDate" : {
+      "@id" : "https://vocab.um.es#hasAnswerDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}
