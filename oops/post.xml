@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<OOPSRequest>
+	<OntologyUrl>https://raw.githubusercontent.com/tecnomod-um/OntoGenixEvaluation/main/ontologies/eCommerce_ontology_human.owl</OntologyUrl>
+	<OntologyContent></OntologyContent>
+	<Pitfalls></Pitfalls>
+	<OutputFormat></OutputFormat>
+	</OOPSRequest>
