@@ -77,7 +77,7 @@ Consequently, the most significant differences are found for the Brazilian and e
 
 ### OOPS!
 
-[Data file with the pitfalls found for each ontology](oops/opps-summary.xlsx)
+[Data file with the pitfalls found for each ontology](oops/oops-summary.xlsx)
 
 OOPS! identified 59 (LLM) and 38 (human) occurrences of pitfalls: critical (11/4), important (22/13) and minor (26/21). The next table provides a summary of the occurrences by dataset. The LLM ontologies have more pitfalls for every dataset. The 38 occurrences of pitfalls in human ontologies are associated with 13 different pitfalls, and the 59 of the LLM ontologies with 15 different pitfalls (out of 41 pitfalls included in the catalog). 
 
